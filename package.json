@@ -1,0 +1,14 @@
+{
+  "name": "oregon-apostille-form",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local Node.js and Express wrapper for the supplied Oregon Apostille form preview",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
