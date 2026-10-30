@@ -21,9 +21,14 @@ Health check: http://localhost:3000/health
 - `backup/index.design-preview.html` — the original design-preview bundle, kept for reference (not served).
 
 ## Page URLs
-Each step has its own URL: `/documents`, `/details`, `/review`, then `/confirmation`.
+The form has three short steps, each with its own URL: `/details` (name, email, phone),
+`/documents` (upload, document type, destination country, translation, speed, return and
+address, in collapsible sections) and `/payment`, then `/confirmation`. Uploading at least one document is
+required. Each uploaded file becomes its own document (priced per document).
+Translation (switched off), notarization ("Not sure"), speed (Standard) and return
+(US Shipping) start with defaults, so customers only change what's different for them.
 The browser Back/Forward buttons move between steps. Reloading always starts again at
-`/documents`, because nothing is saved yet. Whatever server hosts the page must send
+`/details`, because nothing is saved yet. Whatever server hosts the page must send
 `index.html` for these paths; `server.js` already does this.
 
 ## Translation page count
@@ -42,5 +47,5 @@ The Same Day option still shows the `[CUTOFF TIME]` placeholder.
 - Submitting an order does not send it anywhere. The confirmation screen is shown
   client-side and the order number is random. Hook your backend, email, or a
   payment provider (e.g. Stripe Checkout) into `submit()` where the `TODO` is.
-- Uploaded files stay in the browser (`S.files`) until that backend exists.
+- Uploaded files stay in the browser (`S.docs[i].files`) until that backend exists.
 - The header and footer logos load from oregonapostillehub.com.

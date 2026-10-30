@@ -4,267 +4,295 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Start your apostille order · Oregon Apostille Hub</title>
-<meta name="description" content="Order an Oregon apostille online in three short steps. Upfront pricing, local pick up in Lake Oswego, US and international shipping.">
+<meta name="description" content="Order an Oregon apostille online in four short steps. Upfront pricing, local pick up in Lake Oswego, US and international shipping.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-/* Brand tokens: oregonapostillehub.com blue */
+/* Brand tokens: oregonapostillehub.com (Montserrat, #055AAB, near-black text, #FFF6F6 footer) */
 :root{
-  --primary:#055AAB; --primary-dark:#04498B; --primary-deep:#033A70;
-  --primary-light:#EEF5FC; --primary-tint:#D7E8F8;
+  --primary:#055AAB; --primary-dark:#04498B; --primary-light:#EEF5FC;
   --text:#101010; --muted:#5F6368;
   --line:rgba(22,22,26,.10); --line-strong:rgba(22,22,26,.22);
-  --ground:#F7F8FA;
+  --ground:#F5F7FA;
   --success:#15803D; --success-bg:#E7F6EC;
   --error:#B42318; --error-bg:#FEF3F2;
   --focus:#2F6FE4;
-  --font-body:Montserrat,-apple-system,system-ui,"Segoe UI",sans-serif;
-  --font-heading:Montserrat,system-ui,sans-serif;
+  --font:Montserrat,-apple-system,system-ui,"Segoe UI",sans-serif;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:96px}
-body{margin:0;font-family:var(--font-body);color:var(--text);background:var(--ground);line-height:1.5;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;font-family:var(--font);color:var(--text);background:var(--ground);line-height:1.45;-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column}
 a{color:var(--primary)}
-h1,h2,h3{font-family:var(--font-heading);margin:0}
-p{margin:0}
-button,input,select,textarea{font:inherit;color:inherit}
+h1,h2,h3,p{margin:0}
+button,input,select{font:inherit;color:inherit}
 [hidden]{display:none!important}
 :focus-visible{outline:3px solid var(--focus);outline-offset:2px}
 .sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-.skip{position:absolute;left:16px;top:-60px;background:#fff;color:var(--primary);padding:10px 16px;border-radius:8px;z-index:50;font-weight:600}
+.skip{position:absolute;left:16px;top:-60px;background:#fff;color:var(--primary);padding:10px 16px;border-radius:5px;z-index:50;font-weight:600}
 .skip:focus{top:12px}
 
 /* Header */
-.hdr{background:#fff;border-bottom:1px solid rgba(22,22,26,.06);position:sticky;top:0;z-index:20}
-.hdr-in{max-width:1180px;margin:0 auto;padding:0 24px;min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-.logo img{display:block;height:48px;width:auto}
-.nav{display:flex;align-items:center;gap:4px}
-.nav a{padding:10px 12px;color:#1F2937;text-decoration:none;font-weight:500;font-size:15px;border-radius:8px}
-.nav a:hover{color:var(--primary);background:var(--primary-light)}
-.help-link{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border:1px solid var(--line-strong);border-radius:5px;color:var(--text);text-decoration:none;font-weight:600;font-size:14px;white-space:nowrap}
+.hdr{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.hdr-in{max-width:1180px;margin:0 auto;padding:0 24px;min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo img{display:block;height:46px;width:auto}
+.nav{display:flex;gap:4px}
+.nav a{padding:10px 12px;color:var(--text);text-decoration:none;font-weight:500;font-size:15px}
+.nav a:hover{color:var(--primary)}
+.help-link{padding:9px 16px;border:1px solid var(--line-strong);border-radius:5px;color:var(--text);text-decoration:none;font-weight:600;font-size:14px;white-space:nowrap}
 .help-link:hover{border-color:var(--primary);color:var(--primary)}
-@media (max-width:900px){.nav{display:none}.hdr-in{padding:0 16px}.logo img{height:40px}}
+@media (max-width:900px){.nav{display:none}.hdr-in{padding:0 16px;min-height:60px}.logo img{height:38px}}
 
-/* Intro + steps */
-.intro{max-width:1080px;margin:0 auto;padding:28px 32px 8px}
-.back{display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;color:var(--muted);text-decoration:none}
-.back:hover{color:var(--primary)}
-.intro h1{font-size:clamp(26px,6.7vw,40px);line-height:1.12;letter-spacing:-.02em;font-weight:700;margin-top:16px}
-.grad{color:var(--primary)}
-.steps{display:flex;align-items:center;gap:8px;margin:28px 0 0;padding:0;list-style:none;max-width:640px}
-.steps li{display:flex;align-items:center;gap:8px;flex:1}
-.steps li:last-child{flex:0 0 auto}
-.step-btn{display:inline-flex;align-items:center;gap:8px;background:none;border:0;padding:4px 2px;cursor:default;border-radius:999px}
-.step-btn.can{cursor:pointer}
-.step-btn.can:hover .step-label{text-decoration:underline}
-.step-num{width:30px;height:30px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;background:#fff;color:var(--muted);border:1.5px solid rgba(22,22,26,.2)}
-.step-label{font-size:13.5px;font-weight:600;color:var(--muted);white-space:nowrap}
-.step-line{flex:1;height:2px;background:var(--line);margin:0 4px;border-radius:2px}
-.steps .is-current .step-num{background:var(--primary);border-color:var(--primary);color:#fff}
-.steps .is-current .step-label{color:var(--primary-dark)}
-.steps .is-done .step-num{background:var(--primary-light);border-color:var(--primary);color:var(--primary)}
-.steps .is-done .step-label{color:var(--text)}
-.steps .is-done .step-line{background:var(--primary)}
-@media (max-width:480px){.step-label{font-size:12.5px}.intro{padding:20px 16px 4px}}
+/* Title + steps */
+.top{max-width:1080px;margin:0 auto;padding:24px 32px 0}
+.top h1{font-size:clamp(22px,4.6vw,32px);line-height:1.15;font-weight:700;letter-spacing:-.01em}
+.top h1 span{color:var(--primary)}
+.tabs{display:flex;margin:18px 0 0;padding:0;list-style:none;border-bottom:1px solid var(--line-strong)}
+.tabs li{flex:1}
+.tab{width:100%;display:flex;align-items:center;justify-content:center;gap:8px;padding:12px 4px 13px;background:none;border:0;border-bottom:3px solid transparent;margin-bottom:-1px;font-weight:600;font-size:14.5px;color:var(--muted);cursor:default}
+.tab.can{cursor:pointer}
+.tab.can:hover{color:var(--primary)}
+.tab-n{width:24px;height:24px;flex:none;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12.5px;font-weight:700;border:1.5px solid var(--line-strong);background:#fff}
+.tab.is-current{color:var(--primary);border-bottom-color:var(--primary)}
+.tab.is-current .tab-n{background:var(--primary);border-color:var(--primary);color:#fff}
+.tab.is-done .tab-n{background:var(--success);border-color:var(--success);color:#fff}
+@media (max-width:600px){.top{padding:16px 16px 0}.tab{font-size:12.5px;flex-direction:column;gap:4px;padding:10px 2px}}
 
 /* Layout */
-.split{max-width:1080px;margin:0 auto;padding:24px 32px 80px;display:grid;grid-template-columns:1.5fr 1fr;gap:32px;align-items:start}
-@media (max-width:900px){.split{grid-template-columns:1fr;padding:16px 16px 32px;gap:20px}}
-.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:32px;box-shadow:0 14px 40px -24px rgba(31,41,55,.2)}
-@media (max-width:600px){.card{padding:22px 18px}}
-.eyebrow{font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--primary)}
-.card-title{font-size:24px;font-weight:700;letter-spacing:-.02em;margin-top:8px}
-.card-lede{font-size:15px;color:var(--muted);margin-top:8px;line-height:1.5}
-.block{margin-top:28px;display:flex;flex-direction:column;gap:18px}
-.block + .block{padding-top:28px;border-top:1px solid var(--line)}
-.block-title{font-size:17px;font-weight:700}
+.split{max-width:1080px;margin:0 auto;padding:20px 32px 64px;display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:28px;align-items:start}
+.split.is-solo{grid-template-columns:minmax(0,680px);justify-content:center}
+.split.is-wide{grid-template-columns:minmax(0,1fr)}
+@media (max-width:900px){.split,.split.is-solo{grid-template-columns:minmax(0,1fr);padding:14px 32px 32px;gap:16px}}
+@media (max-width:600px){.split,.split.is-solo{padding-left:16px;padding-right:16px}}
+.panel{display:flex;flex-direction:column;gap:12px}
+
+/* Colored cards (one color per kind of content) */
+.sec{--c:var(--primary);--t:var(--primary-light);background:#fff;border:1px solid var(--line);border-left:4px solid var(--c);border-radius:8px}
+.sec--blue{--c:#055AAB;--t:#EEF5FC}
+.sec--teal{--c:#0F766E;--t:#E6F4F1}
+.sec--violet{--c:#6D28D9;--t:#F3EEFD}
+.sec--amber{--c:#B45309;--t:#FDF3E3}
+.sec--slate{--c:#334155;--t:#F1F5F9}
+.sec-h{display:flex;align-items:center;gap:10px;padding:14px 16px 4px}
+.sec-ico{flex:none;width:32px;height:32px;border-radius:8px;background:var(--t);color:var(--c);display:flex;align-items:center;justify-content:center}
+.sec-title{flex:1;font-weight:700;font-size:16px}
+.sec-b{padding:10px 16px 18px;display:flex;flex-direction:column;gap:16px}
+/* Collapsible section headers: tap to open/close, a one-line summary shows while closed */
+.sec-hh{margin:0;font:inherit}
+.sec-toggle{width:100%;border:0;background:none;font:inherit;color:inherit;text-align:left;cursor:pointer;min-height:56px;border-radius:8px}
+.sec-toggle:focus-visible{outline:3px solid var(--focus);outline-offset:-3px}
+.sec-tt{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.sec-sum{font-size:13px;font-weight:500;color:var(--muted)}
+.sec-sum.need{color:var(--c);font-weight:600}
+.sec-toggle[aria-expanded="true"] .sec-sum{display:none}
+.chev{flex:none;width:10px;height:10px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg);margin:0 6px 4px 0;transition:transform .2s}
+.sec-toggle[aria-expanded="true"] .chev{transform:rotate(-135deg);margin-bottom:-4px}
+.sec.is-closed .sec-h{padding-bottom:14px}
+#tr-sec .sec-h{padding-bottom:14px}
+#tr-sec.is-on .sec-h{padding-bottom:4px}
+/* On/off switch */
+.switch{position:relative;flex:none;display:inline-flex;cursor:pointer}
+.switch input{position:absolute;inset:0;opacity:0;margin:0;cursor:pointer}
+.switch-ui{width:46px;height:26px;border-radius:13px;background:#C9CDD3;position:relative;transition:background .2s}
+.switch-ui::after{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.25);transition:transform .2s}
+.switch input:checked + .switch-ui{background:var(--c)}
+.switch input:checked + .switch-ui::after{transform:translateX(20px)}
+.switch input:focus-visible + .switch-ui{outline:3px solid var(--focus);outline-offset:2px}
 
 /* Fields */
 .field{display:flex;flex-direction:column;gap:6px;min-width:0}
-.label{font-weight:600;font-size:14.5px}
+.label{font-weight:600;font-size:14px;display:flex;align-items:center;gap:6px}
 .opt{font-weight:400;color:var(--muted)}
-.hint{font-size:13.5px;color:var(--muted)}
-.input,.select,.textarea{width:100%;min-height:46px;padding:10px 14px;border:1px solid var(--line-strong);border-radius:5px;font-size:16px;background:#fff;transition:border-color .15s,box-shadow .15s}
-.textarea{min-height:110px;resize:vertical}
-.input:hover,.select:hover,.textarea:hover{border-color:#9CA3AF}
-.input:focus,.select:focus,.textarea:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(5,90,171,.18)}
+.hint{font-size:13px;color:var(--muted)}
+.input,.select{width:100%;min-height:48px;padding:10px 12px;border:1px solid var(--line-strong);border-radius:5px;font-size:16px;background:#fff}
+.input:focus,.select:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(5,90,171,.18)}
 .is-error.input,.is-error.select{border-color:var(--error);background:#FFFBFA}
-.input.is-valid{border-color:var(--success)}
-.err{display:flex;gap:6px;align-items:flex-start;color:var(--error);font-size:13.5px;font-weight:500}
-.err::before{content:"!";flex:none;width:16px;height:16px;margin-top:2px;border-radius:50%;border:1.6px solid currentColor;font:700 10px/13px var(--font-body);text-align:center}
-.ok{color:var(--success);font-size:13.5px;font-weight:500}
-.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-@media (max-width:640px){.grid2,.grid3{grid-template-columns:minmax(0,1fr)}}
+.err{color:var(--error);font-size:13px;font-weight:500}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+@media (max-width:560px){.grid2{grid-template-columns:minmax(0,1fr)}}
+.intl-hint{margin:0;font-size:13px;color:var(--c);display:flex;align-items:center;justify-content:space-between;gap:8px;background:var(--t);border-radius:6px;padding:6px 6px 6px 10px}
+.intl-switch{flex:none;border:1px solid var(--c);background:#fff;color:var(--c);font:inherit;font-weight:700;border-radius:4px;padding:6px 12px;cursor:pointer;min-height:34px}
+/* Details card: tinted side panel + stacked fields */
+.det-card{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.7fr);overflow:hidden}
+.det-side{background:var(--t);padding:14px 8px 24px}
+.det-side .sec-h{padding:10px 16px 4px}
+.det-side .sec-ico{background:#fff}
+.det-points{list-style:none;margin:14px 0 0;padding:0 16px;display:flex;flex-direction:column;gap:12px;font-size:14px;color:var(--text)}
+.det-points li{display:flex;gap:10px;align-items:flex-start}
+.det-points li::before{content:"✓";flex:none;width:20px;height:20px;border-radius:50%;background:var(--c);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.sec-b.det-fields{padding:26px 28px 30px;gap:20px}
+@media (max-width:760px){
+  .det-card{grid-template-columns:minmax(0,1fr)}
+  .det-side{background:none;padding:0}
+  .det-side .sec-h{padding:14px 16px 4px}
+  .det-side .sec-ico{background:var(--t)}
+  .det-points{display:none}
+  .sec-b.det-fields{padding:10px 16px 18px;gap:16px}
+}
 fieldset{border:0;padding:0;margin:0;min-width:0}
-legend{padding:0;margin:0 0 10px}
+legend{padding:0;margin:0 0 8px}
+.phone{display:flex;gap:8px}
+.phone .select{width:auto;flex:none;max-width:118px}
 
-/* Dropzone */
-.drop{position:relative;display:block;border-radius:8px;border:1.5px dashed var(--line-strong);background:#FAFBFC;padding:36px 20px;text-align:center;cursor:pointer;transition:border-color .15s,background .15s}
-.drop:hover,.drop.is-over{border-color:var(--primary);background:var(--primary-light)}
+/* Info icon: opens inline so it never covers the options */
+.info-btn{width:20px;height:20px;border-radius:50%;border:1.5px solid currentColor;background:none;color:var(--muted);font:700 11px/1 var(--font);cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0}
+.info-btn:hover,.info-btn[aria-expanded="true"]{color:var(--primary)}
+.tip{margin:0 0 8px;background:var(--t);border-left:3px solid var(--c);font-size:13px;line-height:1.5;padding:8px 10px;border-radius:0 5px 5px 0}
+
+/* Upload */
+.drop{position:relative;display:block;border:1.5px dashed var(--c);border-radius:8px;background:var(--t);padding:26px 16px;text-align:center;cursor:pointer}
+.drop:hover,.drop.is-over{border-style:solid}
 .drop:focus-within{outline:3px solid var(--focus);outline-offset:2px}
-.drop-ico{width:52px;height:52px;margin:0 auto;border-radius:50%;background:var(--primary-light);color:var(--primary);display:flex;align-items:center;justify-content:center}
-.drop-title{font-size:16px;font-weight:700;margin-top:12px}
-.drop-sub{font-size:13px;color:var(--muted);margin-top:4px}
-.drop-sub b{color:var(--primary);font-weight:600}
-.files{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
-.file{display:flex;align-items:center;gap:12px;padding:10px 12px;border:1px solid var(--line);border-radius:5px;background:#fff}
-.file-ext{flex:none;width:40px;height:40px;border-radius:8px;background:var(--primary-light);color:var(--primary);display:flex;align-items:center;justify-content:center;font:700 10.5px var(--font-body);letter-spacing:.04em;overflow:hidden}
+.drop.is-error{border-color:var(--error);background:#FFFBFA}
+.drop-t{font-weight:700;font-size:15px;color:var(--c)}
+.drop-s{display:block;font-size:12.5px;color:var(--muted);margin-top:4px}
+.files{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.file{display:flex;align-items:center;gap:10px;padding:8px 10px;border:1px solid var(--line);border-radius:5px}
+.file-ext{flex:none;width:36px;height:36px;border-radius:5px;background:var(--t);color:var(--c);display:flex;align-items:center;justify-content:center;font:700 10px var(--font);overflow:hidden}
 .file-ext img{width:100%;height:100%;object-fit:cover}
 .file-meta{flex:1;min-width:0}
-.file-name{font-size:14px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.file-size{font-size:12.5px;color:var(--muted)}
-.x-btn{flex:none;width:36px;height:36px;border:0;background:none;border-radius:8px;cursor:pointer;color:var(--muted);font-size:20px;line-height:1}
+.file-name{font-size:13.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.file-size{font-size:12px;color:var(--muted)}
+.x-btn{flex:none;width:40px;height:40px;border:0;background:none;border-radius:5px;cursor:pointer;color:var(--muted);font-size:20px}
 .x-btn:hover{background:var(--error-bg);color:var(--error)}
 
 /* Combobox */
 .combo{position:relative}
-.combo .input{padding-left:42px}
-.combo-ico{position:absolute;left:14px;top:14px;color:var(--muted);pointer-events:none}
-.combo-list{position:absolute;z-index:15;left:0;right:0;top:calc(100% + 6px);background:#fff;border:1px solid var(--line-strong);border-radius:5px;box-shadow:0 16px 32px -12px rgba(31,41,55,.25);padding:6px;max-height:300px;overflow:auto;margin:0;list-style:none}
-.combo-opt{display:flex;justify-content:space-between;align-items:center;min-height:42px;padding:0 12px;border-radius:8px;cursor:pointer;font-size:15px}
+.combo-list{position:absolute;z-index:15;left:0;right:0;top:calc(100% + 4px);background:#fff;border:1px solid var(--line-strong);border-radius:5px;box-shadow:0 12px 28px rgba(0,0,0,.14);padding:4px;max-height:260px;overflow:auto;margin:0;list-style:none}
+.combo-opt{min-height:42px;padding:0 10px;border-radius:4px;cursor:pointer;display:flex;align-items:center;font-size:15px}
 .combo-opt.is-active,.combo-opt:hover{background:var(--primary-light)}
-.combo-opt.is-sel{font-weight:600;color:var(--primary-dark)}
-.combo-empty{padding:12px;color:var(--muted);font-size:14px}
+.combo-opt.is-sel{font-weight:600}
+.combo-empty{padding:10px;color:var(--muted);font-size:14px}
 
-.reveal{display:flex;flex-direction:column;gap:18px;padding:18px;border-radius:5px;background:var(--ground)}
-
-/* Stepper */
-.stepper{display:inline-flex;align-items:center;border:1px solid var(--line-strong);border-radius:5px;overflow:hidden;height:46px;background:#fff;align-self:flex-start}
-.stepper button{width:46px;height:100%;border:0;background:var(--ground);cursor:pointer;font-size:20px;color:var(--primary)}
-.stepper button:hover{background:var(--primary-light)}
-.stepper button:disabled{color:#B8BEC7;cursor:not-allowed;background:var(--ground)}
-.pages-auto{display:flex;align-items:center;gap:8px;min-height:46px;font-weight:700;font-size:16px}
-.pages-auto::before{content:"✓";color:var(--success)}
-.pages-auto.is-counting::before{content:none}
-.stepper output{min-width:56px;text-align:center;font-weight:700}
-
-/* Pills + option cards */
-.pills{display:flex;flex-wrap:wrap;gap:8px}
-.pill{position:relative;display:inline-flex;align-items:center;gap:8px;min-height:42px;padding:0 16px;border:1px solid var(--line-strong);border-radius:5px;background:#fff;cursor:pointer;font-weight:500;font-size:14.5px}
-.pill:hover{border-color:var(--primary)}
-.pill:focus-within{outline:3px solid var(--focus);outline-offset:2px}
-.pill.is-on{border-color:var(--primary);background:var(--primary);color:#fff}
-.pills.is-error .pill{border-color:var(--error)}
-.opt-card{position:relative;display:flex;flex-direction:column;gap:2px;padding:16px;border:1.5px solid var(--line-strong);border-radius:6px;background:#fff;cursor:pointer;transition:border-color .15s,background .15s}
-.opt-card:hover{border-color:var(--primary)}
-.opt-card:focus-within{outline:3px solid var(--focus);outline-offset:2px}
-.opt-card.is-on{border-color:var(--primary);box-shadow:inset 0 0 0 1px var(--primary);background:var(--primary-light)}
-.cards-err .opt-card{border-color:var(--error)}
-.oc-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
-.oc-name{font-weight:600;font-size:15px}
-.oc-price{font:700 22px var(--font-heading);color:var(--primary-dark);margin-top:6px}
-.oc-unit{font:500 12.5px var(--font-body);color:var(--muted)}
-.oc-meta{font-size:13px;color:var(--muted)}
-.dot{flex:none;width:20px;height:20px;border-radius:50%;border:2px solid #A3AAB5;background:#fff}
-.is-on .dot{border:6px solid var(--primary)}
-
-/* Document rows */
-.docs{display:flex;flex-direction:column;gap:12px}
-.doc{border:1px solid var(--line);border-radius:6px;padding:16px;display:flex;flex-direction:column;gap:14px;background:#FCFDFE}
-.doc-h{display:flex;justify-content:space-between;align-items:center;gap:12px}
-.doc-title{font:700 15px var(--font-heading)}
-.doc-right{display:flex;align-items:center;gap:6px}
-.doc-price{font-size:13.5px;color:var(--muted);font-weight:500}
-.link-btn{border:0;background:none;padding:6px 8px;border-radius:8px;cursor:pointer;color:var(--muted);font-weight:500;font-size:14px}
+/* Documents */
+.doc{border:1px solid var(--line);border-radius:6px;padding:12px;display:flex;flex-direction:column;gap:12px;background:#fff}
+.doc-h{display:flex;justify-content:space-between;align-items:center;gap:8px;font-weight:700;font-size:14px}
+/* Once documents are listed, a divider sets the "upload another" box apart from the cards */
+#docs:not(:empty){padding-bottom:18px;border-bottom:1px solid var(--line)}
+.link-btn{border:0;background:none;padding:4px 6px;border-radius:4px;cursor:pointer;color:var(--muted);font-weight:500;font-size:13px}
 .link-btn:hover{background:var(--error-bg);color:var(--error)}
-.add-btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;min-height:52px;border:1.5px dashed var(--line-strong);background:#fff;color:var(--primary);border-radius:6px;font-weight:600;font-size:15px;cursor:pointer}
-.add-btn:hover{border-color:var(--primary);background:var(--primary-light)}
+.add-btn{border:1.5px dashed var(--c);background:#fff;color:var(--c);border-radius:6px;font-weight:700;font-size:14.5px;cursor:pointer;min-height:48px}
+.add-btn:hover{background:var(--t)}
+.doc-n{display:inline-flex;align-items:center;gap:8px}
+.doc-n b{width:22px;height:22px;border-radius:50%;background:var(--c);color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px}
+/* Once a document has a file, its upload area shrinks to a one-line "add a page" link */
+.drop.more{padding:16px 12px;border-style:dashed}
+.drop.more .drop-t{font-size:13.5px}
 
-/* Phone, checkbox */
-.phone{display:flex;gap:8px}
-.phone .select{width:auto;flex:none;max-width:130px}
-.check{position:relative;display:flex;gap:12px;align-items:flex-start;cursor:pointer;font-size:15px}
-.check input{width:20px;height:20px;margin:2px 0 0;accent-color:var(--primary);flex:none;cursor:pointer}
-.check.is-error input{outline:2px solid var(--error);outline-offset:2px}
+/* Pills + choices */
+.pills{display:flex;flex-wrap:wrap;gap:6px}
+.pill{position:relative;display:inline-flex;align-items:center;min-height:42px;padding:0 14px;border:1px solid var(--line-strong);border-radius:5px;background:#fff;cursor:pointer;font-weight:500;font-size:14px}
+.pill:hover{border-color:var(--c)}
+.pill:focus-within{outline:3px solid var(--focus);outline-offset:2px}
+.pill.is-on{border-color:var(--c);background:var(--c);color:#fff}
+.choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+@media (max-width:640px){.choices{grid-template-columns:minmax(0,1fr)}}
+.choice{position:relative;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:2px 10px;padding:10px 12px;border:1.5px solid var(--line-strong);border-radius:6px;background:#fff;cursor:pointer}
+.choice:hover{border-color:var(--c)}
+.choice:focus-within{outline:3px solid var(--focus);outline-offset:2px}
+.choice.is-on{border-color:var(--c);background:var(--t)}
+.dot{grid-row:span 2;width:18px;height:18px;border-radius:50%;border:2px solid #A3AAB5;background:#fff}
+.is-on .dot{border:5px solid var(--c)}
+.ch-name{font-weight:600;font-size:14.5px}
+.ch-price{font-weight:700;font-size:14.5px;text-align:right}
+.ch-meta{grid-column:2/4;font-size:12.5px;color:var(--muted)}
+@media (min-width:641px){.choice{grid-template-columns:auto 1fr}.ch-price{grid-column:2;text-align:left}.ch-meta{grid-column:2}.dot{grid-row:span 3}}
 
-/* Review */
-.review{display:flex;flex-direction:column;gap:12px}
-.rv{border:1px solid var(--line);border-radius:6px;padding:16px 18px}
-.rv-h{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:10px}
-.rv-t{font:700 15px var(--font-heading)}
-.rv-edit{border:0;background:none;color:var(--primary);font-weight:600;font-size:14px;cursor:pointer;padding:4px 6px;border-radius:6px}
-.rv-edit:hover{background:var(--primary-light)}
-.rv-grid{margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 24px}
-.rv-grid .full{grid-column:1/-1}
-.rv-grid dt{font-size:12.5px;font-weight:600;letter-spacing:.03em;text-transform:uppercase;color:var(--muted)}
-.rv-grid dd{margin:2px 0 0;font-size:15px;font-weight:500;overflow-wrap:anywhere}
-@media (max-width:560px){.rv-grid{grid-template-columns:1fr}}
-.kv{margin:0;display:flex;flex-direction:column;gap:6px}
-.kv div{display:flex;justify-content:space-between;gap:16px;font-size:14px}
-.kv dt{color:var(--muted)}
-.kv dd{margin:0;font-weight:600;text-align:right;overflow-wrap:anywhere}
+/* Translation details */
+.tr-more{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;padding:12px;border-radius:6px;background:var(--t)}
+@media (max-width:560px){.tr-more{grid-template-columns:minmax(0,1fr)}}
+.pages-auto{font-weight:700;font-size:15px;min-height:42px;display:flex;align-items:center}
+.stepper{display:inline-flex;align-items:center;border:1px solid var(--line-strong);border-radius:5px;overflow:hidden;height:42px;background:#fff;align-self:flex-start}
+.stepper button{width:42px;height:100%;border:0;background:#fff;cursor:pointer;font-size:18px;color:var(--c)}
+.stepper button:disabled{color:#B8BEC7;cursor:not-allowed}
+.stepper output{min-width:44px;text-align:center;font-weight:700}
 
 /* Buttons */
-.actions{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:32px;padding-top:24px;border-top:1px solid var(--line)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-size:15px;font-weight:700;padding:14px 28px;border-radius:5px;border:1px solid transparent;cursor:pointer;text-decoration:none;white-space:nowrap;transition:background .15s}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-size:16px;font-weight:700;padding:14px 24px;border-radius:5px;border:1px solid transparent;cursor:pointer;text-decoration:none;white-space:nowrap}
 .btn-primary{color:#fff;background:var(--primary)}
 .btn-primary:hover{background:var(--primary-dark)}
-.btn-primary:disabled{opacity:.6;cursor:progress}
-.btn-ghost{background:#fff;color:var(--text);border-color:var(--line-strong)}
-.btn-ghost:hover{border-color:var(--primary);color:var(--primary)}
-.btn-text{font-size:15px;font-weight:600;color:var(--muted);background:none;border:0;cursor:pointer;padding:10px 4px;text-decoration:none}
+.btn-ghost{background:#fff;color:var(--primary);border-color:var(--line-strong);padding:10px 16px;font-size:14px}
+.btn-text{font-size:15px;font-weight:600;color:var(--muted);background:none;border:0;cursor:pointer;padding:10px 4px}
 .btn-text:hover{color:var(--primary)}
-.alert{background:var(--error-bg);border:1px solid #F4C7C3;border-radius:5px;padding:12px 14px;color:#7A271A;font-size:14px;margin-top:20px}
+.actions{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:4px}
+.actions .btn-primary{margin-left:auto;min-width:200px}
+/* On mobile, Continue lives in the bottom bar: keep only a compact Back link and close the gap to the footer */
+@media (max-width:900px){
+  .actions .btn-primary{display:none}
+  .actions{margin-top:0}
+  .actions .btn-text{padding:6px 4px}
+  [data-step="1"] .actions{display:none}
+  .split,.split.is-solo{padding-bottom:16px}
+}
+.check{position:relative;display:flex;gap:10px;align-items:flex-start;cursor:pointer;font-size:14.5px}
+.check input{width:22px;height:22px;margin:0;accent-color:var(--primary);flex:none}
+.check.is-error input{outline:2px solid var(--error);outline-offset:2px}
 
 /* Summary */
-.sum{position:sticky;top:96px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:28px}
-@media (max-width:900px){.sum{position:static}}
-.sum-title{font-size:17px;font-weight:700}
-.sum-dest{display:flex;justify-content:space-between;gap:12px;font-size:14px;color:var(--muted);margin-top:16px;padding-bottom:14px;border-bottom:1px solid var(--line)}
-.sum-dest strong{color:var(--text);font-weight:600;text-align:right}
-.lines{display:flex;flex-direction:column;gap:12px;padding:16px 0}
-.line{display:flex;justify-content:space-between;gap:12px;font-size:14.5px}
-.line-sub{display:block;font-size:12.5px;color:var(--muted)}
+.sum{position:sticky;top:84px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:20px}
+/* Phones: the bottom bar carries the total and the payment step shows the full summary */
+@media (max-width:900px){.sum{display:none}}
+.msum{display:none}
+@media (max-width:900px){.msum{display:block}}
+.sum-title{font-size:16px;font-weight:700}
+.lines{display:flex;flex-direction:column;gap:10px;padding:14px 0}
+.line{display:flex;justify-content:space-between;gap:12px;font-size:14px}
+.line-sub{display:block;font-size:12px;color:var(--muted)}
 .line-amt{font-weight:600;white-space:nowrap}
 .line-amt.muted{color:var(--muted);font-weight:500}
-.line-amt.disc{color:var(--success)}
-.total-row{display:flex;justify-content:space-between;align-items:baseline;padding-top:16px;border-top:1px solid var(--line)}
+.total-row{display:flex;justify-content:space-between;align-items:baseline;padding-top:12px;border-top:1px solid var(--line)}
 .total-lbl{font-weight:600}
-.total{font:700 30px var(--font-heading);letter-spacing:-.02em}
-.fine{font-size:12.5px;color:var(--muted);margin-top:6px}
-.trust{list-style:none;margin:20px 0 0;padding:16px 0 0;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
-.trust li{font-size:13px;display:flex;gap:8px}
-.trust li::before{content:"✓";color:var(--success);font-weight:700}
-.sum-help{font-size:13px;color:var(--muted);margin-top:16px}
+.total{font-weight:700;font-size:26px}
+.fine{font-size:12px;color:var(--muted);margin-top:4px}
+.trust{list-style:none;margin:14px 0 0;padding:12px 0 0;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:6px;font-size:12.5px}
+.trust li::before{content:"✓ ";color:var(--success);font-weight:700}
+.kv{margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 20px}
+.kv .full{grid-column:1/-1}
+.kv dt{font-size:11.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.kv dd{margin:1px 0 0;font-size:14.5px;overflow-wrap:anywhere}
+@media (max-width:560px){.kv{grid-template-columns:minmax(0,1fr)}}
+.edit{border:0;background:none;color:var(--primary);font-weight:600;font-size:13.5px;cursor:pointer;padding:4px 6px}
+.pay-btn{width:100%;min-height:54px}
 
 /* Mobile bottom bar */
 .mbar{display:none}
 @media (max-width:900px){
   html{scroll-padding-bottom:90px}
-  /* Room under the footer so the fixed bar never covers it; includes the iPhone home-indicator area */
-  body.has-mbar .ftr{padding-bottom:calc(32px + 72px + env(safe-area-inset-bottom))}
-  .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;background:#fff;border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom));gap:12px;align-items:center;justify-content:space-between;box-shadow:0 -6px 18px rgba(31,41,55,.08)}
-  .mbar .btn{padding:12px 20px}
+  body.has-mbar .ftr{padding-bottom:calc(28px + 72px + env(safe-area-inset-bottom))}
+  .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;background:#fff;border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom));gap:12px;align-items:center;justify-content:space-between;box-shadow:0 -6px 18px rgba(0,0,0,.08)}
+  .mbar .btn{padding:13px 22px;flex:1;max-width:240px}
 }
-.mbar-total{display:flex;flex-direction:column;line-height:1.2}
-.mbar-total span{font-size:12.5px;color:var(--muted)}
-.mbar-total strong{font:700 21px var(--font-heading)}
+.mbar-total{display:flex;flex-direction:column;align-items:flex-start;line-height:1.2;border:0;background:none;padding:4px 8px 4px 0;font:inherit;color:inherit;cursor:pointer;text-align:left}
+.mbar-total span{font-size:12px;color:var(--muted)}
+.mbar-total strong{font-size:20px;font-weight:700}
+.mbar-link{color:var(--primary);font-weight:600;margin-left:4px}
+.caret{display:inline-block;font-style:normal;transition:transform .2s}
+.mbar-total[aria-expanded="true"] .caret{transform:rotate(180deg)}
+.msheet{position:absolute;left:0;right:0;bottom:100%;background:#fff;border-radius:14px 14px 0 0;padding:16px 16px 12px;box-shadow:0 -10px 24px rgba(0,0,0,.14);max-height:60vh;overflow:auto;animation:sheet-up .22s ease-out}
+.msheet-h{display:flex;justify-content:space-between;align-items:center;font-size:16px}
+.msheet .lines{border-bottom:1px solid var(--line)}
+.msheet-total{display:flex;justify-content:space-between;align-items:center;padding-top:12px;font-weight:700}
+.msheet-total strong{font-size:20px}
+.mback{position:fixed;inset:0;z-index:29;background:rgba(16,16,16,.45)}
+@keyframes sheet-up{from{transform:translateY(16px);opacity:0}to{transform:none;opacity:1}}
 
 /* Confirmation */
-.done-wrap{max-width:760px;margin:0 auto;padding:40px 16px 80px;display:flex;flex-direction:column;gap:20px}
-.done-card{text-align:center;display:flex;flex-direction:column;align-items:center;gap:12px}
-.done-ico{width:72px;height:72px;border-radius:50%;background:var(--success-bg);color:var(--success);display:flex;align-items:center;justify-content:center}
-.order-no{display:inline-flex;flex-wrap:wrap;justify-content:center;gap:4px 14px;background:var(--ground);border:1px solid var(--line);border-radius:999px;padding:8px 18px;font-size:14px;color:var(--muted)}
-.order-no strong{color:var(--text);letter-spacing:.03em}
-.done-actions{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:8px}
-.next-list{list-style:none;margin:16px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-@media (max-width:560px){.next-list{grid-template-columns:1fr}}
-.next-list li{display:flex;gap:12px}
-.next-n{flex:none;width:30px;height:30px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px}
-.next-t{font-weight:700;font-size:15px}
-.next-d{font-size:14px;color:var(--muted)}
+.done{max-width:680px;margin:0 auto;padding:32px 16px 64px;display:flex;flex-direction:column;gap:14px}
+.done-card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:28px 20px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px}
+.done-ico{width:60px;height:60px;border-radius:50%;background:var(--success-bg);color:var(--success);display:flex;align-items:center;justify-content:center}
+.done-card h1{font-size:24px}
+.order-no{background:var(--ground);border:1px solid var(--line);border-radius:5px;padding:6px 14px;font-size:14px}
+.next{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;font-size:14px}
+.next li{display:flex;gap:10px}
+.next b{flex:none;width:24px;height:24px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-size:12.5px}
 
-/* Footer (compact, like a checkout page) */
-.ftr{background:#FFF6F6;padding:28px 32px 32px;text-align:center;font-size:13.5px;color:var(--muted)}
-.ftr img{height:44px;width:auto}
-.ftr p{margin-top:10px}
-.ftr-links{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 18px;margin-top:10px}
+/* Footer */
+.ftr{margin-top:auto;background:#FFF6F6;padding:28px 24px;text-align:center;font-size:13px;color:var(--muted)}
+.ftr img{height:40px;width:auto}
+.ftr p{margin-top:8px}
 .ftr a{color:var(--muted);text-decoration:none}
 .ftr a:hover{color:var(--primary)}
-
-@media print{.hdr,.ftr,.mbar,.done-actions,.skip{display:none!important}body{background:#fff}}
+@media print{.hdr,.ftr,.mbar,.skip,.no-print{display:none!important}body{background:#fff}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
@@ -282,121 +310,42 @@ legend{padding:0;margin:0 0 10px}
       <a href="https://oregonapostillehub.com/hague-convention-countries/">Hague Countries</a>
       <a href="https://oregonapostillehub.com/blog/">Blog</a>
     </nav>
-    <a class="help-link" href="https://oregonapostillehub.com/contact/">Need help?</a>
+    <a class="help-link" href="tel:+19717083000">Need help?</a>
   </div>
 </header>
 
 <div id="view-form">
-  <section class="intro">
-    <a class="back" href="https://oregonapostillehub.com/">← Back to home</a>
-    <h1>Start your <span class="grad">apostille order</span></h1>
-    <ol class="steps" id="steps" aria-label="Order progress"></ol>
+  <section class="top">
+    <h1>Start your <span>apostille order</span></h1>
+    <ol class="tabs" id="tabs" aria-label="Order steps"></ol>
   </section>
 
   <main class="split" id="main">
-    <div class="card">
+    <form class="panel" id="form" novalidate autocomplete="on">
 
-      <!-- STEP 1: Documents -->
-      <section data-step="1" aria-labelledby="s1-title">
-        <p class="eyebrow">Step 1 of 3</p>
-        <h2 class="card-title" id="s1-title">Your documents</h2>
-        <p class="card-lede">Upload your documents and tell us what you need. Your price updates as you go.</p>
-
-        <div class="block">
-          <div>
-            <h3 class="block-title">Upload documents <span class="opt" style="font-size:14px">(optional)</span></h3>
-            <p class="hint" style="margin-top:4px">Scans help us check your documents and quote translation before the originals arrive.</p>
-          </div>
-          <label class="drop" id="drop" for="file-input">
-            <span class="drop-ico" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4M7 9l5-5 5 5"/><path d="M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></svg></span>
-            <p class="drop-title">Drag &amp; drop your files</p>
-            <p class="drop-sub">or <b>browse</b> · PDF, DOC, JPG, PNG or ZIP · up to 10 files, 30 MB each</p>
-            <input id="file-input" class="sr" type="file" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.zip">
-          </label>
-          <div id="file-errors"></div>
-          <ul class="files" id="files"></ul>
-        </div>
-
-        <div class="block">
-          <div>
-            <h3 class="block-title">Translation</h3>
-            <p class="hint" style="margin-top:4px">Certified translation of your documents. Choose “No translation needed” if you only need the apostille.</p>
-          </div>
-          <div class="grid2">
-            <div class="field">
-              <label class="label" for="fromLang">Document language</label>
-              <select id="fromLang" class="select lang-select" aria-describedby="err-fromLang"></select>
-              <p class="err" id="err-fromLang" hidden></p>
+      <!-- STEP 1: Details -->
+      <section data-step="1" class="panel" aria-label="Your details">
+        <div class="sec sec--blue det-card">
+          <div class="det-side">
+            <div class="sec-h">
+              <span class="sec-ico" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></span>
+              <h2 class="sec-title">Your details</h2>
             </div>
-            <div class="field">
-              <label class="label" for="toLang">Translate into</label>
-              <select id="toLang" class="select lang-select" aria-describedby="err-toLang"></select>
-              <p class="err" id="err-toLang" hidden></p>
-            </div>
+            <ul class="det-points">
+              <li>Order updates go to your email</li>
+              <li>We call only if something is missing</li>
+              <li>Your details stay private</li>
+            </ul>
           </div>
-          <div class="reveal" id="tr-reveal" hidden>
-            <div class="grid2">
-              <div class="field">
-                <span class="label" id="pages-label">Number of pages</span>
-                <p class="pages-auto" id="pages-auto" aria-live="polite" hidden></p>
-                <div class="stepper" id="pages-stepper" role="group" aria-labelledby="pages-label">
-                  <button type="button" id="pages-down" aria-label="Decrease pages">−</button>
-                  <output id="pages" aria-live="polite">1</output>
-                  <button type="button" id="pages-up" aria-label="Increase pages">+</button>
-                </div>
-                <span class="hint" id="pages-note"></span>
-                <span class="hint" id="pages-rate"></span>
-              </div>
-              <fieldset>
-                <legend class="label">Delivery format</legend>
-                <div class="pills" id="delivery-pills"></div>
-              </fieldset>
-            </div>
-          </div>
-        </div>
-        <div class="block">
-          <h3 class="block-title">Documents to apostille</h3>
-          <div class="field">
-            <label class="label" for="country">Destination country</label>
-            <span class="hint" id="country-hint">The country where your document will be used.</span>
-            <div class="combo">
-              <svg class="combo-ico" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-              <input id="country" class="input" type="text" role="combobox" autocomplete="off" aria-autocomplete="list" aria-expanded="false" aria-controls="country-list" aria-describedby="country-hint err-country" placeholder="Start typing a country">
-              <ul class="combo-list" id="country-list" role="listbox" hidden></ul>
-            </div>
-            <p class="err" id="err-country" hidden></p>
-          </div>
-          <div class="docs" id="docs"></div>
-          <button type="button" class="add-btn" id="add-doc">+ Add another document</button>
-          <fieldset>
-            <legend class="label">Processing speed <span class="opt">· applies to every document</span></legend>
-            <div class="grid3" id="speeds"></div>
-            <p class="hint" style="margin-top:10px">Government fees, if any, are billed at cost.</p>
-          </fieldset>
-        </div>
-
-        <div class="actions">
-          <a class="btn-text" href="https://oregonapostillehub.com/">← Cancel</a>
-          <button type="button" class="btn btn-primary" data-next="2">Continue to details →</button>
-        </div>
-      </section>
-
-      <!-- STEP 2: Details -->
-      <section data-step="2" aria-labelledby="s2-title" hidden>
-        <p class="eyebrow">Step 2 of 3</p>
-        <h2 class="card-title" id="s2-title">Your details</h2>
-        <p class="card-lede">Where we should send updates and return your documents.</p>
-
-        <div class="block">
-          <div class="grid2">
+          <div class="sec-b det-fields">
             <div class="field">
               <label class="label" for="name">Full name</label>
-              <input id="name" class="input" type="text" autocomplete="name" data-field aria-describedby="err-name">
+              <input id="name" class="input" type="text" autocomplete="name" data-field>
               <p class="err" id="err-name" hidden></p>
             </div>
             <div class="field">
               <label class="label" for="email">Email</label>
-              <input id="email" class="input" type="email" autocomplete="email" inputmode="email" data-field aria-describedby="err-email">
+              <input id="email" class="input" type="email" autocomplete="email" inputmode="email" data-field>
               <p class="err" id="err-email" hidden></p>
             </div>
             <div class="field">
@@ -404,150 +353,241 @@ legend{padding:0;margin:0 0 10px}
               <div class="phone">
                 <label class="sr" for="phoneCode">Country code</label>
                 <select id="phoneCode" class="select" data-field></select>
-                <input id="phone" class="input" type="tel" autocomplete="tel-national" inputmode="tel" data-field aria-describedby="err-phone">
+                <input id="phone" class="input" type="tel" autocomplete="tel-national" inputmode="tel" data-field>
               </div>
               <p class="err" id="err-phone" hidden></p>
             </div>
+          </div>
+        </div>
+        <div class="actions">
+          <button type="button" class="btn btn-primary" data-next>Continue →</button>
+        </div>
+      </section>
+
+      <!-- STEP 2: Documents, translation and delivery -->
+      <section data-step="2" class="panel" aria-label="Documents and delivery" hidden>
+        <div class="sec sec--teal" id="sec-docs">
+          <h2 class="sec-hh"><button type="button" class="sec-h sec-toggle" data-collapse="docs" aria-expanded="true" aria-controls="docs-body">
+            <span class="sec-ico" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></span>
+            <span class="sec-tt"><span class="sec-title">Your documents</span><span class="sec-sum" id="docs-sum"></span></span><span class="chev" aria-hidden="true"></span>
+          </button></h2>
+          <div class="sec-b" id="docs-body">
+            <!-- One upload area; each uploaded file becomes a document card with its type and notarization -->
+            <div id="docs" style="display:flex;flex-direction:column;gap:12px"></div>
+            <label class="drop" id="drop-main" data-drop="new" for="file-main">
+              <span class="drop-t" id="drop-main-t"></span><span class="drop-s" id="drop-main-s"></span>
+              <input id="file-main" class="sr" type="file" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.zip" data-file-input="new">
+            </label>
+            <p class="err" id="err-docs" hidden>Upload at least one document.</p>
+            <div id="upload-errors"></div>
             <div class="field">
-              <label class="label" for="company">Company <span class="opt">(optional)</span></label>
-              <input id="company" class="input" type="text" autocomplete="organization" data-field>
+              <label class="label" for="country">Country where they will be used</label>
+              <div class="combo">
+                <input id="country" class="input" type="text" role="combobox" autocomplete="off" aria-autocomplete="list" aria-expanded="false" aria-controls="country-list" placeholder="Start typing a country">
+                <ul class="combo-list" id="country-list" role="listbox" hidden></ul>
+              </div>
+              <p class="err" id="err-country" hidden></p>
             </div>
           </div>
         </div>
 
-        <div class="block">
-          <fieldset>
-            <legend class="block-title">Return shipping</legend>
-            <div class="grid3" id="ships"></div>
-            <p class="err" id="err-shipping" style="margin-top:8px" hidden></p>
-          </fieldset>
+        <div class="sec sec--violet" id="tr-sec">
+          <div class="sec-h">
+            <span class="sec-ico" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h9M8.5 3v2M6 5c0 4 3 7 6 8M11 5c0 4-3 7-7 8"/><path d="m13 21 4-9 4 9M14.5 18h5"/></svg></span>
+            <h2 class="sec-title" id="tr-title">Need a translation?</h2>
+            <label class="switch"><input type="checkbox" id="needTranslation" role="switch" aria-labelledby="tr-title"><span class="switch-ui" aria-hidden="true"></span></label>
+          </div>
+          <div class="sec-b" id="tr-body" hidden>
+            <div class="grid2">
+              <div class="field">
+                <label class="label" for="toLang">Translate into</label>
+                <select id="toLang" class="select lang-select"></select>
+                <p class="err" id="err-toLang" hidden></p>
+              </div>
+              <div class="field">
+                <label class="label" for="fromLang">Document language</label>
+                <select id="fromLang" class="select lang-select"></select>
+                <p class="err" id="err-fromLang" hidden></p>
+              </div>
+            </div>
+            <div class="tr-more">
+              <div class="field">
+                <span class="label" id="pages-label">Pages</span>
+                <p class="pages-auto" id="pages-auto" aria-live="polite" hidden></p>
+                <div class="stepper" id="pages-stepper" role="group" aria-labelledby="pages-label">
+                  <button type="button" id="pages-down" aria-label="Fewer pages">−</button>
+                  <output id="pages">1</output>
+                  <button type="button" id="pages-up" aria-label="More pages">+</button>
+                </div>
+                <span class="hint" id="pages-note"></span>
+              </div>
+              <fieldset>
+                <legend class="label">Translation format</legend>
+                <div class="pills" id="delivery-pills"></div>
+              </fieldset>
+            </div>
+          </div>
         </div>
 
-        <div class="block" id="addr-block">
-          <h3 class="block-title">Return address <span class="opt" id="addr-note" style="font-size:14px"></span></h3>
-          <div class="field">
-            <label class="label" for="addr1">Street address</label>
-            <input id="addr1" class="input" type="text" autocomplete="address-line1" data-field aria-describedby="err-addr1">
-            <p class="err" id="err-addr1" hidden></p>
+        <div class="sec sec--amber" id="sec-ship">
+          <h2 class="sec-hh"><button type="button" class="sec-h sec-toggle" data-collapse="ship" aria-expanded="true" aria-controls="ship-body">
+            <span class="sec-ico" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4v10l-9 4-9-4z"/><path d="M3 7l9 4 9-4M12 11v10"/></svg></span>
+            <span class="sec-tt"><span class="sec-title">Speed &amp; delivery</span><span class="sec-sum" id="ship-sum"></span></span><span class="chev" aria-hidden="true"></span>
+          </button></h2>
+          <div class="sec-b" id="ship-body">
+            <fieldset>
+              <legend class="label">Processing speed</legend>
+              <div class="choices" id="speeds"></div>
+            </fieldset>
+            <fieldset>
+              <legend class="label">Get your documents back by</legend>
+              <div class="choices" id="ships"></div>
+            </fieldset>
+            <div id="addr" style="display:flex;flex-direction:column;gap:14px">
+              <div class="field">
+                <label class="label" for="addr1">Street address</label>
+                <input id="addr1" class="input" type="text" autocomplete="street-address" data-field>
+                <p class="err" id="err-addr1" hidden></p>
+              </div>
+              <div class="grid2">
+                <div class="field">
+                  <label class="label" for="city">City</label>
+                  <input id="city" class="input" type="text" autocomplete="address-level2" data-field>
+                  <p class="err" id="err-city" hidden></p>
+                </div>
+                <div class="field">
+                  <label class="label" for="postal">ZIP / postal code</label>
+                  <input id="postal" class="input" type="text" autocomplete="postal-code" data-field>
+                  <p class="err" id="err-postal" hidden></p>
+                </div>
+                <div class="field">
+                  <label class="label" for="region">State <span class="opt">(optional)</span></label>
+                  <input id="region" class="input" type="text" autocomplete="address-level1" data-field>
+                </div>
+                <div class="field">
+                  <label class="label" for="addrCountry">Country</label>
+                  <select id="addrCountry" class="select" autocomplete="country-name" data-field></select>
+                  <p class="intl-hint" id="intl-hint" hidden>Outside the US, use International shipping. <button type="button" class="intl-switch" id="intl-switch">Switch</button></p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="field">
-            <label class="label" for="addr2">Apt, suite, unit <span class="opt">(optional)</span></label>
-            <input id="addr2" class="input" type="text" autocomplete="address-line2" data-field>
-          </div>
-          <div class="grid2">
-            <div class="field">
-              <label class="label" for="city">City</label>
-              <input id="city" class="input" type="text" autocomplete="address-level2" data-field aria-describedby="err-city">
-              <p class="err" id="err-city" hidden></p>
-            </div>
-            <div class="field">
-              <label class="label" for="region">State / Province</label>
-              <input id="region" class="input" type="text" autocomplete="address-level1" data-field>
-            </div>
-            <div class="field">
-              <label class="label" for="postal">ZIP / Postal code</label>
-              <input id="postal" class="input" type="text" autocomplete="postal-code" data-field aria-describedby="err-postal">
-              <p class="err" id="err-postal" hidden></p>
-            </div>
-            <div class="field">
-              <label class="label" for="addrCountry">Country</label>
-              <select id="addrCountry" class="select" autocomplete="country-name" data-field></select>
-            </div>
-          </div>
-          <p class="hint" id="intl-hint" hidden>Your address is outside the US. Choose International shipping so we can send it back to you.</p>
         </div>
-
+        <!-- Phones and tablets: order summary at the end of the step (desktop uses the side card) -->
+        <div class="sec sec--slate msum">
+          <div class="sec-h"><h2 class="sec-title">Order summary</h2></div>
+          <div class="sec-b">
+            <div class="lines" id="msum-lines" style="padding:0"></div>
+            <div class="total-row"><span class="total-lbl">Total</span><span class="total js-total">$0</span></div>
+            <p class="fine">Government fees, if any, are billed at cost.</p>
+          </div>
+        </div>
         <div class="actions">
           <button type="button" class="btn-text" data-go="1">← Back</button>
-          <button type="button" class="btn btn-primary" data-next="3">Continue to review →</button>
+          <button type="button" class="btn btn-primary" data-next>Continue →</button>
         </div>
       </section>
 
-      <!-- STEP 3: Review -->
-      <section data-step="3" aria-labelledby="s3-title" hidden>
-        <p class="eyebrow">Step 3 of 3</p>
-        <h2 class="card-title" id="s3-title">Review &amp; submit</h2>
-        <p class="card-lede">Check your details, then submit. Your price is in the order summary.</p>
-
-        <div class="block">
-          <div class="review" id="review"></div>
-        </div>
-
-        <div class="block">
-          <div class="field">
-            <label class="check" id="terms-wrap" for="terms"><input id="terms" type="checkbox" data-field aria-describedby="err-terms"><span>I agree to the <a href="https://oregonapostillehub.com/terms-and-conditions" target="_blank" rel="noopener">terms of service</a> and confirm the details above are correct.</span></label>
-            <p class="err" id="err-terms" hidden></p>
+      <!-- STEP 3: Payment -->
+      <section data-step="3" class="panel" aria-label="Payment" hidden>
+        <div class="sec sec--slate">
+          <div class="sec-h">
+            <h2 class="sec-title">Your order</h2>
+            <button type="button" class="edit" data-go="2">Edit</button>
+          </div>
+          <div class="sec-b">
+            <div class="lines" id="pay-lines" style="padding:0"></div>
+            <div class="total-row"><span class="total-lbl">Total</span><span class="total js-total">$0</span></div>
+            <p class="fine">Government fees, if any, are billed at cost.</p>
           </div>
         </div>
-
-        <div class="alert" id="submit-alert" role="alert" hidden></div>
-
+        <div class="sec sec--slate">
+          <div class="sec-h">
+            <h2 class="sec-title">Contact &amp; return</h2>
+            <button type="button" class="edit" data-go="1">Edit</button>
+          </div>
+          <div class="sec-b"><dl class="kv" id="pay-contact"></dl></div>
+        </div>
+        <div class="sec sec--blue">
+          <div class="sec-h">
+            <span class="sec-ico" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h4"/></svg></span>
+            <h2 class="sec-title">Payment</h2>
+          </div>
+          <div class="sec-b">
+            <!-- TODO: mount the card form (e.g. Stripe Payment Element) here and charge in submit(). -->
+            <label class="check" id="terms-wrap" for="terms"><input id="terms" type="checkbox" data-field><span>I agree to the <a href="https://oregonapostillehub.com/terms-and-conditions" target="_blank" rel="noopener">terms of service</a>.</span></label>
+            <p class="err" id="err-terms" hidden></p>
+            <button type="button" class="btn btn-primary pay-btn" id="submit">Pay <span class="js-total">$0</span></button>
+          </div>
+        </div>
         <div class="actions">
           <button type="button" class="btn-text" data-go="2">← Back</button>
-          <button type="button" class="btn btn-primary" id="submit">Submit order · <span class="js-total">$0</span></button>
         </div>
       </section>
-    </div>
+    </form>
 
-    <aside class="sum" aria-labelledby="sum-title">
+    <aside class="sum" id="summary" aria-labelledby="sum-title">
       <h2 class="sum-title" id="sum-title">Order summary</h2>
-      <div class="sum-dest"><span>Destination</span><strong id="sum-dest">Not selected</strong></div>
       <div class="lines" id="lines" aria-live="polite"></div>
       <div class="total-row"><span class="total-lbl">Total</span><span class="total js-total">$0</span></div>
       <p class="fine">Government fees, if any, are billed at cost.</p>
       <ul class="trust">
-        <li>Upfront pricing, no surprises</li>
+        <li>Upfront pricing</li>
         <li>Local pick up in Lake Oswego</li>
-        <li>US and international tracked shipping</li>
+        <li>Tracked US &amp; international shipping</li>
       </ul>
-      <p class="sum-help">Questions? Call <a href="tel:+19717083000">+1 (971) 708-3000</a></p>
     </aside>
   </main>
 
+  <div class="mback" id="mback" hidden></div>
   <div class="mbar">
-    <span class="mbar-total"><span>Total</span><strong class="js-total">$0</strong></span>
-    <button type="button" class="btn btn-primary" id="mbar-next">Continue →</button>
+    <!-- Price breakdown that slides up from the bottom bar on mobile -->
+    <div class="msheet" id="msheet" role="dialog" aria-label="Price details" hidden>
+      <div class="msheet-h"><strong>Price details</strong><button type="button" class="x-btn" id="msheet-close" aria-label="Close price details">×</button></div>
+      <div class="lines" id="msheet-lines"></div>
+      <div class="msheet-total"><span>Total</span><strong class="js-total">$0</strong></div>
+    </div>
+    <button type="button" class="mbar-total" id="mbar-total" aria-expanded="false" aria-controls="msheet">
+      <span>Total <b class="mbar-link">Details <i class="caret" aria-hidden="true">▴</i></b></span><strong class="js-total">$0</strong>
+    </button>
+    <button type="button" class="btn btn-primary" data-next>Continue →</button>
   </div>
 </div>
 
-<!-- Confirmation -->
-<main id="view-done" class="done-wrap" hidden tabindex="-1">
-  <section class="card done-card" aria-labelledby="done-title">
-    <span class="done-ico" aria-hidden="true"><svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
-    <h1 class="card-title" id="done-title" style="font-size:clamp(26px,4vw,34px)">Order received. Thank you!</h1>
-    <p class="card-lede">We’ve emailed a confirmation to <strong id="done-email" style="color:var(--text)"></strong>. Keep your order number handy if you call us.</p>
-    <span class="order-no"><span>Order number <strong id="done-no"></strong></span><span>Placed <span id="done-date"></span></span></span>
-    <div class="done-actions">
+<main id="view-done" class="done" hidden tabindex="-1">
+  <section class="done-card">
+    <span class="done-ico" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+    <h1>Order received. Thank you!</h1>
+    <p class="hint">Confirmation sent to <b id="done-email" style="color:var(--text)"></b></p>
+    <span class="order-no">Order <b id="done-no"></b> · <span id="done-date"></span></span>
+    <div class="no-print" style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:6px">
       <button type="button" class="btn btn-primary" onclick="window.print()">Print receipt</button>
-      <button type="button" class="btn btn-ghost" id="new-order">Start another order</button>
+      <button type="button" class="btn btn-ghost" id="new-order">New order</button>
     </div>
   </section>
-  <section class="card" aria-labelledby="next-title">
-    <h2 class="block-title" id="next-title">What happens next</h2>
-    <ol class="next-list">
-      <li><span class="next-n">1</span><span><span class="next-t">Check your inbox</span><br><span class="next-d">Your confirmation includes your order details and next steps.</span></span></li>
-      <li><span class="next-n">2</span><span><span class="next-t">Send your originals</span><br><span class="next-d">Mail or drop off original documents at 5 Centerpointe Dr, Suite #400, Lake Oswego OR 97035.</span></span></li>
-      <li><span class="next-n">3</span><span><span class="next-t">We process your order</span><br><span class="next-d" id="done-speed"></span></span></li>
-      <li><span class="next-n">4</span><span><span class="next-t" id="done-ship-t"></span><br><span class="next-d" id="done-ship-d"></span></span></li>
-    </ol>
+  <section class="sec sec--blue">
+    <div class="sec-h"><h2 class="sec-title">What happens next</h2></div>
+    <div class="sec-b">
+      <ol class="next">
+        <li><b>1</b><span>Mail or drop off your originals at 5 Centerpointe Dr, Suite #400, Lake Oswego OR 97035.</span></li>
+        <li><b>2</b><span id="done-speed"></span></li>
+        <li><b>3</b><span id="done-ship"></span></li>
+      </ol>
+    </div>
   </section>
-  <section class="card" aria-labelledby="recap-title">
-    <h2 class="block-title" id="recap-title">Order details</h2>
-    <div class="lines" id="done-lines"></div>
-    <div class="total-row"><span class="total-lbl">Total</span><span class="total js-total">$0</span></div>
+  <section class="sec sec--slate">
+    <div class="sec-h"><h2 class="sec-title">Order details</h2></div>
+    <div class="sec-b">
+      <div class="lines" id="done-lines" style="padding:0"></div>
+      <div class="total-row"><span class="total-lbl">Total</span><span class="total js-total">$0</span></div>
+    </div>
   </section>
-  <p class="hint" style="text-align:center">Need to change something? Call <a href="tel:+19717083000">+1 (971) 708-3000</a> or email <a href="mailto:info@oregonapostillehub.com">info@oregonapostillehub.com</a> with your order number.</p>
 </main>
 
 <footer class="ftr">
   <a href="https://oregonapostillehub.com/" aria-label="Oregon Apostille Hub home"><img src="https://oregonapostillehub.com/wp-content/uploads/2025/01/OAH-Logo-1-1-1.png" alt="Oregon Apostille Hub" width="300" height="80"></a>
   <p>5 Centerpointe Dr, Suite #400, Lake Oswego OR 97035 · <a href="mailto:info@oregonapostillehub.com">info@oregonapostillehub.com</a> · <a href="tel:+19717083000">+1 (971) 708-3000</a></p>
-  <div class="ftr-links">
-    <span>© 2026 Oregon Apostille Hub LLC</span>
-    <a href="https://oregonapostillehub.com/contact/">Contact support</a>
-    <a href="https://oregonapostillehub.com/terms-and-conditions">Terms</a>
-    <a href="https://oregonapostillehub.com/hague-convention-countries/">Hague Convention countries</a>
-  </div>
+  <p>© 2026 Oregon Apostille Hub LLC · <a href="https://oregonapostillehub.com/terms-and-conditions">Terms</a></p>
 </footer>
 
 <script>
@@ -561,55 +601,53 @@ legend{padding:0;margin:0 0 10px}
     speeds: [
       { id: 'standard', name: 'Standard', price: 125, time: '4–14 days' },
       { id: 'express', name: 'Express', price: 155, time: '1–3 days' },
-      { id: 'same', name: 'Same Day', price: 255, time: 'Same day · order by [CUTOFF TIME]' }
+      { id: 'same', name: 'Same Day', price: 255, time: 'Order by [CUTOFF TIME]' }
     ],
     ships: [
-      { id: 'us', name: 'US Shipping', price: 35, meta: 'Tracked delivery within the US', title: 'Shipped to you', text: 'We ship your completed documents with tracking to the address you gave us.' },
-      { id: 'intl', name: 'International', price: 75, meta: 'Tracked worldwide delivery', title: 'Shipped worldwide', text: 'We ship your completed documents internationally with tracking.' },
-      { id: 'pickup', name: 'Local Pick Up', price: 0, meta: 'Collect from our Lake Oswego office', title: 'Ready for pick up', text: 'We’ll email you when your documents are ready to collect in Lake Oswego.' }
+      { id: 'us', name: 'US Shipping', price: 35, meta: 'Tracked, within the US', done: 'We ship your documents back with tracking.' },
+      { id: 'intl', name: 'International', price: 75, meta: 'Tracked, worldwide', done: 'We ship your documents internationally with tracking.' },
+      { id: 'pickup', name: 'Local Pick Up', price: 0, meta: 'Lake Oswego office', done: 'We email you when your documents are ready to collect.' }
     ],
-    deliveries: [{ id: 'pdf', label: 'PDF' }, { id: 'physical', label: 'Physical' }, { id: 'both', label: 'Both' }],
-    notaries: [{ id: 'certified', label: 'Already notarized / certified copy' }, { id: 'needs', label: 'Needs notarization' }, { id: 'unsure', label: 'Not sure' }],
+    deliveries: [{ id: 'pdf', label: 'PDF' }, { id: 'physical', label: 'Printed copy' }, { id: 'both', label: 'Both' }],
+    notaries: [{ id: 'certified', label: 'Yes' }, { id: 'needs', label: 'No, notarize it' }, { id: 'unsure', label: 'Not sure' }],
     docTypes: {
       Personal: ['Birth certificate', 'Marriage certificate', 'Divorce decree', 'Death certificate', 'Diploma or transcript', 'Oregon State Police background check', 'Single status affidavit', 'Power of attorney', 'Other personal document'],
       Business: ['Articles of incorporation / organization', 'Certificate of good standing', 'Corporate resolution or bylaws', 'Commercial invoice / certificate of origin', 'Other business document'],
       Federal: ['FBI background check', 'IRS Form 6166 (residency certification)', 'FDA / USDA export certificate', 'Other federal document']
     },
     languages: ['English', 'Spanish', 'French', 'German', 'Italian', 'Portuguese', 'Chinese (Simplified)', 'Chinese (Traditional)', 'Japanese', 'Korean', 'Vietnamese', 'Tagalog', 'Arabic', 'Russian', 'Ukrainian', 'Hindi', 'Gujarati', 'Punjabi', 'Polish', 'Dutch', 'Turkish', 'Farsi', 'Other'],
-    phoneCodes: [['+1', 'US/CA +1'], ['+44', 'UK +44'], ['+61', 'AU +61'], ['+64', 'NZ +64'], ['+91', 'IN +91'], ['+52', 'MX +52'], ['+49', 'DE +49'], ['+33', 'FR +33'], ['+34', 'ES +34'], ['+39', 'IT +39'], ['+81', 'JP +81'], ['+82', 'KR +82'], ['+86', 'CN +86'], ['+63', 'PH +63'], ['+84', 'VN +84'], ['+971', 'AE +971'], ['+966', 'SA +966'], ['+974', 'QA +974'], ['+55', 'BR +55'], ['+57', 'CO +57'], ['+234', 'NG +234'], ['+27', 'ZA +27']],
+    phoneCodes: [['+1', 'US +1'], ['+44', 'UK +44'], ['+61', 'AU +61'], ['+64', 'NZ +64'], ['+91', 'IN +91'], ['+52', 'MX +52'], ['+49', 'DE +49'], ['+33', 'FR +33'], ['+34', 'ES +34'], ['+39', 'IT +39'], ['+81', 'JP +81'], ['+82', 'KR +82'], ['+86', 'CN +86'], ['+63', 'PH +63'], ['+84', 'VN +84'], ['+971', 'AE +971'], ['+966', 'SA +966'], ['+974', 'QA +974'], ['+55', 'BR +55'], ['+57', 'CO +57'], ['+234', 'NG +234'], ['+27', 'ZA +27']],
     addrCountries: ['United States', 'Canada', 'Mexico', 'United Kingdom', 'Ireland', 'Australia', 'New Zealand', 'India', 'Germany', 'France', 'Spain', 'Italy', 'Netherlands', 'Japan', 'South Korea', 'China', 'Philippines', 'Vietnam', 'United Arab Emirates', 'Saudi Arabia', 'Qatar', 'Brazil', 'Colombia', 'Other country'],
     countries: ['Argentina', 'Australia', 'Austria', 'Bahamas', 'Bangladesh', 'Belgium', 'Belize', 'Brazil', 'Bulgaria', 'Cambodia', 'Canada', 'Chile', 'China', 'Colombia', 'Costa Rica', 'Croatia', 'Cyprus', 'Czech Republic', 'Denmark', 'Dominican Republic', 'Ecuador', 'Egypt', 'El Salvador', 'Estonia', 'Ethiopia', 'Fiji', 'Finland', 'France', 'Germany', 'Ghana', 'Greece', 'Guatemala', 'Honduras', 'Hong Kong', 'Hungary', 'Iceland', 'India', 'Indonesia', 'Ireland', 'Israel', 'Italy', 'Jamaica', 'Japan', 'Jordan', 'Kenya', 'Kuwait', 'Latvia', 'Lebanon', 'Lithuania', 'Luxembourg', 'Malaysia', 'Malta', 'Mexico', 'Morocco', 'Nepal', 'Netherlands', 'New Zealand', 'Nicaragua', 'Nigeria', 'Norway', 'Oman', 'Pakistan', 'Panama', 'Paraguay', 'Peru', 'Philippines', 'Poland', 'Portugal', 'Qatar', 'Romania', 'Saudi Arabia', 'Serbia', 'Singapore', 'Slovakia', 'Slovenia', 'South Africa', 'South Korea', 'Spain', 'Sri Lanka', 'Sweden', 'Switzerland', 'Taiwan', 'Thailand', 'Turkey', 'Ukraine', 'United Arab Emirates', 'United Kingdom', 'Uruguay', 'Venezuela', 'Vietnam']
   };
-  var STEP_NAMES = ['Documents', 'Details', 'Review'];
-  var SLUGS = ['documents', 'details', 'review'];
-  var SLUG_RE = /\/(documents|details|review|confirmation|index\.html)\/?$/;
-  var BASE = location.pathname.replace(SLUG_RE, '').replace(/\/$/, '');
-  function urlFor(slug) { return BASE + '/' + slug; }
-  function stepFromPath() { var m = SLUG_RE.exec(location.pathname); var i = m ? SLUGS.indexOf(m[1]) : -1; return i < 0 ? 1 : i + 1; }
+  var STEPS = [
+    { slug: 'details', name: 'Details', focus: 'name' },
+    { slug: 'documents', name: 'Documents & delivery', focus: null },
+    { slug: 'payment', name: 'Payment', focus: null }
+  ];
   var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
-  // ---------- State ----------
+  // ---------- State (defaults keep required answers to a minimum) ----------
   var uid = 0;
-  var S;
-  function fresh() {
-    return {
-      step: 1, maxStep: 1, tried: {}, touched: {},
-      country: '', needTranslation: false, fromLang: '', toLang: '', pages: 1, delivery: 'pdf',
-      docs: [{ id: ++uid, type: '', notary: '' }], speed: 'standard', files: [], fileErrors: [],
-      name: '', email: '', phoneCode: '+1', phone: '', company: '', addr1: '', addr2: '', city: '', region: '', postal: '', addrCountry: 'United States',
-      shipping: '', terms: false
-    };
-  }
-  S = fresh();
+  var S = {
+    step: 1, maxStep: 1, tried: {}, touched: {},
+    name: '', email: '', phoneCode: '+1', phone: '',
+    country: '', docs: [], uploadErrors: [],
+    toLang: '', fromLang: '', needTranslation: false, pages: 1, delivery: 'pdf',
+    speed: 'standard', shipping: 'us', addr1: '', city: '', region: '', postal: '', addrCountry: 'United States',
+    terms: false
+  };
+
+  function newDoc() { return { id: ++uid, type: '', notary: 'unsure', files: [], fileErrors: [] }; }
+  function allFiles() { return S.docs.reduce(function (a, d) { return a.concat(d.files); }, []); }
+  function docById(id) { return S.docs.find(function (d) { return d.id === Number(id); }); }
 
   // ---------- Helpers ----------
   var $ = function (id) { return document.getElementById(id); };
   function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
-  function money(n) {
-    var r = Math.round(n * 100) / 100;
-    return '$' + (r % 1 === 0 ? r.toLocaleString('en-US') : r.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
-  }
+  function money(n) { var r = Math.round(n * 100) / 100; return '$' + (r % 1 === 0 ? r.toLocaleString('en-US') : r.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })); }
   function digits(x) { return (x || '').replace(/\D/g, '').length; }
+  function plural(n, w) { return n + ' ' + w + (n === 1 ? '' : 's'); }
   function fmtSize(b) { return b >= 1048576 ? (b / 1048576).toFixed(1) + ' MB' : Math.max(1, Math.round(b / 1024)) + ' KB'; }
   function speedObj() { return CFG.speeds.find(function (x) { return x.id === S.speed; }) || CFG.speeds[0]; }
   function shipObj() { return CFG.ships.find(function (x) { return x.id === S.shipping; }); }
@@ -619,86 +657,92 @@ legend{padding:0;margin:0 0 10px}
   }
 
   // ---------- Validation ----------
+  var STEP_OF = { name: 1, email: 1, phone: 1, country: 2, toLang: 2, fromLang: 2, addr1: 2, city: 2, postal: 2, terms: 3 };
+  var MSG = {
+    name: 'Enter your name.',
+    email: function () { return S.email.trim() ? 'Enter a valid email.' : 'Enter your email.'; },
+    phone: 'Enter at least 7 digits.',
+    country: 'Choose a country.',
+    toLang: 'Choose a language.',
+    fromLang: 'Choose the document’s language.',
+    addr1: 'Enter your street address.', city: 'Enter your city.', postal: 'Enter your ZIP or postal code.',
+    terms: 'Please agree to the terms.'
+  };
   function validity() {
     var pickup = S.shipping === 'pickup';
     var ok = {
+      name: S.name.trim().length > 1, email: EMAIL_RE.test(S.email.trim()), phone: digits(S.phone) >= 7,
       country: !!S.country,
+      toLang: !S.needTranslation || !!S.toLang,
       fromLang: !S.needTranslation || !!S.fromLang,
-      toLang: !!S.toLang,
-      docs: S.docs.length > 0 && S.docs.every(function (d) { return d.type && d.notary; }),
-      name: S.name.trim().length > 1,
-      email: EMAIL_RE.test(S.email.trim()),
-      phone: digits(S.phone) >= 7,
-      shipping: !!S.shipping,
-      addr1: pickup || S.addr1.trim().length > 2,
-      city: pickup || S.city.trim().length > 1,
-      postal: pickup || S.postal.trim().length >= 3,
+      addr1: pickup || S.addr1.trim().length > 2, city: pickup || !!S.city.trim(), postal: pickup || S.postal.trim().length >= 3,
       terms: !!S.terms
     };
-    return {
-      ok: ok,
-      1: ok.country && ok.fromLang && ok.toLang && ok.docs,
-      2: ok.name && ok.email && ok.phone && ok.shipping && ok.addr1 && ok.city && ok.postal,
+    var docsOk = S.docs.length > 0 && S.docs.every(function (d) { return d.type; });
+    var shipOk = ok.addr1 && ok.city && ok.postal;
+    return { ok: ok, docsOk: docsOk, shipOk: shipOk, step: {
+      1: ok.name && ok.email && ok.phone,
+      2: ok.country && docsOk && ok.toLang && ok.fromLang && shipOk,
       3: ok.terms
-    };
+    } };
   }
-  var STEP_OF = { country: 1, fromLang: 1, toLang: 1, name: 2, email: 2, phone: 2, shipping: 2, addr1: 2, city: 2, postal: 2, terms: 3 };
-  var MSG = {
-    country: 'Choose the country where the document will be used.',
-    fromLang: 'Choose the document’s current language.',
-    toLang: 'Choose a language, or “No translation needed”.',
-    name: 'Enter your full name.',
-    email: function () { return S.email.trim() ? 'Enter a valid email, like name@example.com.' : 'Enter your email address.'; },
-    phone: 'Enter a phone number with at least 7 digits.',
-    shipping: 'Choose how you’d like your documents returned.',
-    addr1: 'Enter your street address.',
-    city: 'Enter your city.',
-    postal: 'Enter your ZIP or postal code.',
-    terms: 'Please agree to the terms to submit your order.'
-  };
-
   function renderErrors() {
     var v = validity();
     Object.keys(MSG).forEach(function (k) {
       var show = (S.tried[STEP_OF[k]] || S.touched[k]) && !v.ok[k];
       var p = $('err-' + k);
       if (p) { p.hidden = !show; p.textContent = show ? (typeof MSG[k] === 'function' ? MSG[k]() : MSG[k]) : ''; }
-      var input = $(k);
-      if (input && input.classList) {
-        input.classList.toggle('is-error', !!show);
-        input.setAttribute('aria-invalid', show ? 'true' : 'false');
-      }
+      var el = $(k);
+      if (el && /INPUT|SELECT/.test(el.tagName) && el.type !== 'checkbox') { el.classList.toggle('is-error', !!show); el.setAttribute('aria-invalid', show ? 'true' : 'false'); }
     });
-    var email = $('email');
-    email.classList.toggle('is-valid', v.ok.email && !!S.touched.email);
     $('terms-wrap').classList.toggle('is-error', !!S.tried[3] && !v.ok.terms);
-    $('ships').classList.toggle('cards-err', !!(S.tried[2] || S.touched.shipping) && !v.ok.shipping);
-    // Per-document errors
     S.docs.forEach(function (d) {
-      var show = S.tried[1] || d.touched;
-      var sel = $('doc-type-' + d.id), te = $('doc-type-err-' + d.id), pills = $('doc-notary-' + d.id), ne = $('doc-notary-err-' + d.id);
+      var show = !!(S.tried[2] || d.touched) && !d.type, sel = $('doc-type-' + d.id);
       if (!sel) return;
-      sel.classList.toggle('is-error', !!show && !d.type);
-      te.hidden = !(show && !d.type);
-      pills.classList.toggle('is-error', !!show && !d.notary);
-      ne.hidden = !(show && !d.notary);
+      sel.classList.toggle('is-error', show);
+      $('doc-type-err-' + d.id).hidden = !show;
     });
+    var noDocs = !!S.tried[2] && !S.docs.length;
+    $('drop-main').classList.toggle('is-error', noDocs);
+    $('err-docs').hidden = !noDocs;
+    renderSections(v);
+  }
+
+  // ---------- Collapsible sections (step 2) ----------
+  var OPEN = { docs: true, ship: false };
+  function renderSections(v) {
+    Object.keys(OPEN).forEach(function (k) {
+      $(k + '-body').hidden = !OPEN[k];
+      document.querySelector('[data-collapse="' + k + '"]').setAttribute('aria-expanded', OPEN[k] ? 'true' : 'false');
+      $('sec-' + k).classList.toggle('is-closed', !OPEN[k]);
+    });
+    var n = S.docs.length;
+    $('docs-sum').textContent = (n ? plural(n, 'document') : 'Upload your documents') + (S.country ? ' · for ' + S.country : '');
+    $('docs-sum').classList.toggle('need', !(v.docsOk && v.ok.country));
+    var pickup = S.shipping === 'pickup';
+    $('ship-sum').textContent = speedObj().name + ' · ' + shipObj().name + (pickup ? '' : v.shipOk ? ' · ' + S.city.trim() : ' · Add your return address');
+    $('ship-sum').classList.toggle('need', !v.shipOk);
   }
 
   // ---------- Pricing ----------
   function pricing() {
     var speed = speedObj(), ship = shipObj(), n = S.docs.length;
-    var docsTotal = n * speed.price;
     var notaryCount = S.docs.filter(function (d) { return d.notary === 'needs'; }).length;
-    var notaryTotal = notaryCount * CFG.notaryFee;
-    var transTotal = S.needTranslation ? S.pages * CFG.translationPerPage : 0;
-    var shipTotal = ship ? ship.price : 0;
-    var services = docsTotal + notaryTotal + transTotal;
-    var lines = [{ label: 'Apostille · ' + speed.name, sub: n + ' × ' + money(speed.price), amt: money(docsTotal) }];
-    if (notaryCount && CFG.notaryFee) lines.push({ label: 'Notarization', sub: notaryCount + ' × ' + money(CFG.notaryFee), amt: money(notaryTotal) });
-    if (S.needTranslation) lines.push({ label: 'Translation', sub: S.pages + (S.pages === 1 ? ' page' : ' pages') + (S.fromLang && S.toLang ? ' · ' + S.fromLang + ' → ' + S.toLang : ''), amt: CFG.translationPerPage ? money(transTotal) : 'Quoted', cls: CFG.translationPerPage ? '' : 'muted' });
-    lines.push(ship ? { label: 'Shipping · ' + ship.name, sub: '', amt: ship.price ? money(ship.price) : 'Free' } : { label: 'Shipping', sub: 'Choose in step 2', amt: '—', cls: 'muted' });
-    return { lines: lines, total: services + shipTotal };
+    var lines = [n
+      ? { label: 'Apostille · ' + speed.name, sub: n + ' × ' + money(speed.price), amt: money(n * speed.price) }
+      : { label: 'Apostille · ' + speed.name, sub: 'per document', amt: money(speed.price), cls: 'muted' }];
+    var total = n * speed.price;
+    if (notaryCount && CFG.notaryFee) { lines.push({ label: 'Notarization', sub: notaryCount + ' × ' + money(CFG.notaryFee), amt: money(notaryCount * CFG.notaryFee) }); total += notaryCount * CFG.notaryFee; }
+    if (S.needTranslation) {
+      var t = S.pages * CFG.translationPerPage; total += t;
+      lines.push({ label: 'Translation', sub: plural(S.pages, 'page') + (S.fromLang ? ' · ' + S.fromLang + ' → ' + S.toLang : ''), amt: CFG.translationPerPage ? money(t) : 'Quoted', cls: CFG.translationPerPage ? '' : 'muted' });
+    }
+    // No shipping charge until there is something to ship.
+    if (n) {
+      lines.push({ label: 'Return · ' + ship.name, sub: '', amt: ship.price ? money(ship.price) : 'Free' });
+      total += ship.price;
+    }
+    return { lines: lines, total: total };
   }
   function linesHtml(lines) {
     return lines.map(function (l) {
@@ -708,87 +752,119 @@ legend{padding:0;margin:0 0 10px}
   function renderSummary() {
     var p = pricing();
     $('lines').innerHTML = linesHtml(p.lines);
-    $('sum-dest').textContent = S.country || 'Not selected';
-    document.querySelectorAll('.js-total').forEach(function (el) { el.textContent = money(p.total); });
-    // per-document price labels
-    S.docs.forEach(function (d) {
-      var el = $('doc-price-' + d.id);
-      if (el) el.textContent = money(speedObj().price) + (d.notary === 'needs' && CFG.notaryFee ? ' + ' + money(CFG.notaryFee) + ' notary' : '');
-    });
-    $('pages-rate').textContent = CFG.translationPerPage ? money(CFG.translationPerPage) + ' per page · ' + money(CFG.translationPerPage * S.pages) + ' total' : 'Quoted after review';
+    $('msheet-lines').innerHTML = linesHtml(p.lines);
+    $('msum-lines').innerHTML = linesHtml(p.lines);
+    document.querySelectorAll('.js-total').forEach(function (el) { el.textContent = money(p.total); }); renderSections(validity());
   }
 
   // ---------- Steps / navigation ----------
-  function renderSteps() {
+  var SLUG_RE = /\/(details|documents|delivery|payment|confirmation|index\.html)\/?$/;
+  var BASE = location.pathname.replace(SLUG_RE, '').replace(/\/$/, '');
+  function urlFor(slug) { return BASE + '/' + slug; }
+  function stepFromPath() { var m = SLUG_RE.exec(location.pathname), i = -1; if (m) STEPS.forEach(function (t, j) { if (t.slug === m[1]) i = j; }); return i < 0 ? 1 : i + 1; }
+
+  function renderTabs() {
     var v = validity();
-    $('steps').innerHTML = STEP_NAMES.map(function (name, i) {
-      var n = i + 1, cur = n === S.step, done = n < S.step || (n <= S.maxStep && v[n] && n !== S.step);
-      var can = n <= S.maxStep && n !== S.step;
-      var cls = cur ? 'is-current' : done ? 'is-done' : '';
-      return '<li class="' + cls + '"><button type="button" class="step-btn' + (can ? ' can' : '') + '" data-go="' + n + '"' + (can ? '' : ' tabindex="-1"') + (cur ? ' aria-current="step"' : '') + '>' +
-        '<span class="step-num">' + (done && !cur ? '✓' : n) + '</span><span class="step-label">' + name + '</span></button>' +
-        (n < STEP_NAMES.length ? '<span class="step-line" aria-hidden="true"></span>' : '') + '</li>';
+    $('tabs').innerHTML = STEPS.map(function (t, i) {
+      var n = i + 1, cur = n === S.step, done = !cur && n <= S.maxStep && v.step[n], can = n <= S.maxStep && !cur;
+      return '<li><button type="button" class="tab' + (cur ? ' is-current' : done ? ' is-done' : '') + (can ? ' can' : '') + '" data-go="' + n + '"' + (cur ? ' aria-current="step"' : '') + (can ? '' : ' tabindex="-1"') + '>' +
+        '<span class="tab-n">' + (done ? '✓' : n) + '</span><span>' + t.name + '</span></button></li>';
     }).join('');
-    $('mbar-next').textContent = S.step === 3 ? 'Submit order' : S.step === 1 ? 'Continue to details' : 'Continue to review';
   }
   function showStep(n, opts) {
+    opts = opts || {};
     n = Math.max(1, Math.min(n, S.maxStep));
     S.step = n;
-    document.querySelectorAll('[data-step]').forEach(function (sec) { sec.hidden = Number(sec.getAttribute('data-step')) !== n; });
-    if (n === 3) renderReview();
-    renderSteps();
-    if (!opts || !opts.fromHistory) { try { history.pushState(null, '', urlFor(SLUGS[n - 1])); } catch (e) {} }
-    if (!opts || opts.scroll !== false) window.scrollTo({ top: 0, behavior: 'smooth' });
+    toggleSheet(false);
+    document.querySelectorAll('[data-step]').forEach(function (s) { s.hidden = Number(s.getAttribute('data-step')) !== n; });
+    var last = n === STEPS.length;
+    // No prices before the customer has picked anything; the payment step shows its own summary.
+    var noSummary = n === 1 || last;
+    $('summary').hidden = noSummary;
+    // Details spans the full width under the step bar; Payment stays a centered column.
+    $('main').classList.toggle('is-wide', n === 1);
+    $('main').classList.toggle('is-solo', last);
+    document.querySelector('.mbar-total').style.visibility = n === 1 ? 'hidden' : '';
+    // The payment step has its own Pay button, so the mobile bottom bar would only repeat it.
+    document.querySelector('.mbar').hidden = last;
+    document.body.classList.toggle('has-mbar', !last);
+    if (last) renderPayment();
+    renderTabs();
+    if (!opts.fromHistory) { try { history.pushState(null, '', urlFor(STEPS[n - 1].slug)); } catch (e) {} }
+    if (opts.scroll !== false) window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (opts.focus !== false && STEPS[n - 1].focus) setTimeout(function () { $(STEPS[n - 1].focus).focus({ preventScroll: true }); }, 50);
   }
-  function tryNext(target) {
-    var cur = target - 1, v = validity();
+  function next() {
+    var cur = S.step, v = validity();
+    if (cur === STEPS.length) { submit(); return; }
     S.tried[cur] = true;
+    // Open any closed section that still needs an answer, so its error is visible.
+    if (cur === 2) {
+      if (!(v.docsOk && v.ok.country)) OPEN.docs = true;
+      if (!v.shipOk) OPEN.ship = true;
+    }
     renderErrors();
-    if (!v[cur]) {
+    if (!v.step[cur]) {
       var first = document.querySelector('[data-step="' + cur + '"] .is-error, [data-step="' + cur + '"] .err:not([hidden])');
-      if (first) { first.scrollIntoView({ behavior: 'smooth', block: 'center' }); if (first.focus && /INPUT|SELECT/.test(first.tagName)) first.focus({ preventScroll: true }); }
+      if (first) { first.scrollIntoView({ behavior: 'smooth', block: 'center' }); if (/INPUT|SELECT/.test(first.tagName)) first.focus({ preventScroll: true }); }
       return;
     }
-    S.maxStep = Math.max(S.maxStep, target);
-    showStep(target);
+    S.maxStep = Math.max(S.maxStep, cur + 1);
+    renderSummary();
+    showStep(cur + 1);
   }
 
-  // ---------- Step 1 rendering ----------
+  // ---------- Documents ----------
+  var NOTARY_TIP = '<b>Yes</b>: already notarized, or a certified copy from the issuing office.<br><b>No, notarize it</b>: we notarize it for you (+' + money(CFG.notaryFee) + ').<br><b>Not sure</b>: we check your upload and let you know.';
   function renderDocs() {
     var groups = Object.keys(CFG.docTypes).map(function (g) {
       return '<optgroup label="' + g + '">' + CFG.docTypes[g].map(function (t) { return '<option>' + esc(t) + '</option>'; }).join('') + '</optgroup>';
     }).join('');
     $('docs').innerHTML = S.docs.map(function (d, i) {
       return '<div class="doc" data-doc="' + d.id + '">' +
-        '<div class="doc-h"><h4 class="doc-title" style="margin:0">Document ' + (i + 1) + '</h4><span class="doc-right"><span class="doc-price" id="doc-price-' + d.id + '"></span>' +
-        (S.docs.length > 1 ? '<button type="button" class="link-btn" data-remove-doc="' + d.id + '" aria-label="Remove document ' + (i + 1) + '">Remove</button>' : '') + '</span></div>' +
+        '<div class="doc-h"><span class="doc-n"><b>' + (i + 1) + '</b>Document ' + (i + 1) + '</span>' +
+        '<button type="button" class="link-btn" data-remove-doc="' + d.id + '">Remove</button></div>' +
+        '<ul class="files" id="files-' + d.id + '"></ul>' +
+        '<div id="file-errors-' + d.id + '"></div>' +
         '<div class="field"><label class="label" for="doc-type-' + d.id + '">Document type</label>' +
-        '<select class="select" id="doc-type-' + d.id + '" data-doc-type="' + d.id + '" aria-describedby="doc-type-err-' + d.id + '"><option value="">Select document type</option>' + groups + '</select>' +
+        '<select class="select" id="doc-type-' + d.id + '" data-doc-type="' + d.id + '"><option value="">Select</option>' + groups + '</select>' +
         '<p class="err" id="doc-type-err-' + d.id + '" hidden>Choose the document type.</p></div>' +
-        '<fieldset><legend class="label">Notarization</legend><div class="pills" id="doc-notary-' + d.id + '">' +
+        '<fieldset><legend class="label">Already notarized? <button type="button" class="info-btn" data-tip="tip-' + d.id + '" aria-expanded="false" aria-controls="tip-' + d.id + '" aria-label="What does this mean?">i</button></legend>' +
+        '<p class="tip" id="tip-' + d.id + '" hidden>' + NOTARY_TIP + '</p>' +
+        '<div class="pills">' +
         CFG.notaries.map(function (p) {
           var on = d.notary === p.id, label = p.id === 'needs' && CFG.notaryFee ? p.label + ' (+' + money(CFG.notaryFee) + ')' : p.label;
           return '<label class="pill' + (on ? ' is-on' : '') + '"><input class="sr" type="radio" name="notary-' + d.id + '" value="' + p.id + '" data-notary="' + d.id + '"' + (on ? ' checked' : '') + '>' + esc(label) + '</label>';
-        }).join('') + '</div><p class="err" id="doc-notary-err-' + d.id + '" style="margin-top:8px" hidden>Choose a notarization option.</p></fieldset></div>';
+        }).join('') + '</div></fieldset></div>';
     }).join('');
+    S.docs.forEach(renderDocFiles);
     S.docs.forEach(function (d) { $('doc-type-' + d.id).value = d.type; });
-    renderSummary(); renderErrors();
+    renderUpload(); renderSummary(); renderErrors();
   }
-  function renderCards(el, list, name, selected, priceFn, metaFn) {
+  function renderUpload() {
+    var has = S.docs.length > 0;
+    $('drop-main').classList.toggle('more', has);
+    $('drop-main-t').textContent = has ? '+ Upload another document' : 'Upload your documents';
+    $('drop-main-s').textContent = has ? 'You can select several files at once' : 'You can select several files at once · PDF, DOC, JPG, PNG or ZIP · 30 MB max';
+    $('upload-errors').innerHTML = S.uploadErrors.map(function (t) { return '<p class="err" role="alert">' + esc(t) + '</p>'; }).join('');
+  }
+
+  // ---------- Choices (speed, return) ----------
+  function renderChoices(el, list, name, selected, priceFn, metaFn) {
     el.innerHTML = list.map(function (x) {
       var on = selected === x.id;
-      return '<label class="opt-card' + (on ? ' is-on' : '') + '"><input class="sr" type="radio" name="' + name + '" value="' + x.id + '"' + (on ? ' checked' : '') + '>' +
-        '<span class="oc-top"><span class="oc-name">' + esc(x.name) + '</span><span class="dot" aria-hidden="true"></span></span>' +
-        '<span class="oc-price">' + priceFn(x) + '</span><span class="oc-meta">' + esc(metaFn(x)) + '</span></label>';
+      return '<label class="choice' + (on ? ' is-on' : '') + '"><input class="sr" type="radio" name="' + name + '" value="' + x.id + '"' + (on ? ' checked' : '') + '>' +
+        '<span class="dot" aria-hidden="true"></span><span class="ch-name">' + esc(x.name) + '</span><span class="ch-price">' + priceFn(x) + '</span><span class="ch-meta">' + esc(metaFn(x)) + '</span></label>';
     }).join('');
   }
-  function renderSpeeds() { renderCards($('speeds'), CFG.speeds, 'speed', S.speed, function (x) { return money(x.price) + '<span class="oc-unit"> / document</span>'; }, function (x) { return x.time; }); }
+  function renderSpeeds() { renderChoices($('speeds'), CFG.speeds, 'speed', S.speed, function (x) { return money(x.price) + '<span class="opt" style="font-size:12px"> /doc</span>'; }, function (x) { return x.time; }); }
   function renderShips() {
-    renderCards($('ships'), CFG.ships, 'shipping', S.shipping, function (x) { return x.price ? money(x.price) : 'Free'; }, function (x) { return x.meta; });
-    var pickup = S.shipping === 'pickup';
-    $('addr-note').textContent = pickup ? '(optional for Local Pick Up)' : '';
+    renderChoices($('ships'), CFG.ships, 'shipping', S.shipping, function (x) { return x.price ? money(x.price) : 'Free'; }, function (x) { return x.meta; });
+    $('addr').hidden = S.shipping === 'pickup';
     $('intl-hint').hidden = !(S.addrCountry !== 'United States' && S.shipping === 'us');
   }
+
+  // ---------- Translation ----------
   function renderDeliveries() {
     $('delivery-pills').innerHTML = CFG.deliveries.map(function (d) {
       var on = S.delivery === d.id;
@@ -796,28 +872,20 @@ legend{padding:0;margin:0 0 10px}
     }).join('');
   }
   function renderTranslation() {
-    $('tr-reveal').hidden = !S.needTranslation;
-    var info = pageInfo(), auto = S.files.length > 0 && !info.unknown.length;
-    var box = $('pages-auto');
-    box.hidden = !auto;
+    $('needTranslation').checked = S.needTranslation;
+    $('tr-body').hidden = !S.needTranslation;
+    $('tr-sec').classList.toggle('is-on', S.needTranslation);
+    var info = pageInfo(), auto = allFiles().length > 0 && !info.unknown.length;
+    $('pages-auto').hidden = !auto;
     $('pages-stepper').hidden = auto;
-    box.classList.toggle('is-counting', info.counting);
-    if (auto) box.textContent = info.counting ? 'Counting pages…' : S.pages + (S.pages === 1 ? ' page' : ' pages') + ', counted from your uploads';
-    $('pages-note').textContent = !S.files.length ? 'Upload your documents above and we’ll count the pages for you.'
-      : info.unknown.length ? 'We couldn’t count the pages in ' + info.unknown.map(function (x) { return x.name; }).join(', ') + '. Adjust if needed.' : '';
+    if (auto) $('pages-auto').textContent = info.counting ? 'Counting…' : plural(S.pages, 'page') + ' (from your uploads)';
+    $('pages-note').textContent = info.unknown.length ? 'Couldn’t count ' + info.unknown.map(function (x) { return x.name; }).join(', ') + '.' : '';
     $('pages').textContent = S.pages;
     $('pages-down').disabled = S.pages <= 1;
     $('pages-up').disabled = S.pages >= 200;
   }
-  function renderFiles() {
-    $('files').innerHTML = S.files.map(function (f) {
-      return '<li class="file"><span class="file-ext">' + (f.url ? '<img src="' + f.url + '" alt="">' : esc(f.ext)) + '</span>' +
-        '<span class="file-meta"><p class="file-name" title="' + esc(f.name) + '">' + esc(f.name) + '</p><p class="file-size">' + fmtSize(f.size) + (f.pages === undefined ? ' · counting pages…' : f.pages ? ' · ' + f.pages + (f.pages === 1 ? ' page' : ' pages') : '') + '</p></span>' +
-        '<button type="button" class="x-btn" data-remove-file="' + f.id + '" aria-label="Remove ' + esc(f.name) + '">×</button></li>';
-    }).join('');
-    $('file-errors').innerHTML = S.fileErrors.map(function (t) { return '<p class="err" role="alert">' + esc(t) + '</p>'; }).join('');
-  }
-  // Page counting: images count as 1 page, PDFs are read in the browser, other types are set by hand.
+
+  // ---------- Upload + page counting ----------
   var pdfjsPromise = null;
   function loadPdfjs() {
     if (!pdfjsPromise) pdfjsPromise = new Promise(function (resolve, reject) {
@@ -829,6 +897,7 @@ legend{padding:0;margin:0 0 10px}
     });
     return pdfjsPromise;
   }
+  // Images count as 1 page, PDFs are read in the browser, other types are set by hand.
   function countPages(f) {
     if (/^(JPE?G|PNG)$/.test(f.ext)) return Promise.resolve(1);
     if (f.ext !== 'PDF') return Promise.resolve(null);
@@ -836,60 +905,75 @@ legend{padding:0;margin:0 0 10px}
       return loadPdfjs()
         .then(function (lib) { return lib.getDocument({ data: buf.slice(0) }).promise; })
         .then(function (doc) { return doc.numPages; })
-        .catch(function () {
-          var m = new TextDecoder('latin1').decode(buf).match(/\/Type\s*\/Page(?![a-zA-Z])/g);
-          return m && m.length ? m.length : null;
-        });
+        .catch(function () { var m = new TextDecoder('latin1').decode(buf).match(/\/Type\s*\/Page(?![a-zA-Z])/g); return m && m.length ? m.length : null; });
     }).catch(function () { return null; });
   }
   function pageInfo() {
+    var files = allFiles();
     return {
-      counting: S.files.some(function (x) { return x.pages === undefined; }),
-      unknown: S.files.filter(function (x) { return x.pages === null; }),
-      counted: S.files.reduce(function (n, x) { return n + (x.pages || 0); }, 0)
+      counting: files.some(function (x) { return x.pages === undefined; }),
+      unknown: files.filter(function (x) { return x.pages === null; }),
+      counted: files.reduce(function (n, x) { return n + (x.pages || 0); }, 0)
     };
   }
   function filesChanged() {
     var info = pageInfo();
     // Files we can't count are assumed to be 1 page until the customer adjusts.
-    if (S.files.length && !info.counting) S.pages = Math.min(200, Math.max(1, info.counted + info.unknown.length));
-    renderFiles(); renderTranslation(); renderSummary();
+    if (allFiles().length && !info.counting) S.pages = Math.min(200, Math.max(1, info.counted + info.unknown.length));
+    S.docs.forEach(renderDocFiles); renderTranslation(); renderSummary(); renderErrors(); renderTabs();
   }
-  function addFiles(list) {
-    var okExt = ['pdf', 'doc', 'docx', 'jpg', 'jpeg', 'png', 'zip'], errs = [], over = 0;
+  function renderDocFiles(d) {
+    var list = $('files-' + d.id);
+    if (!list) return;
+    list.innerHTML = d.files.map(function (f) {
+      return '<li class="file"><span class="file-ext">' + (f.url ? '<img src="' + f.url + '" alt="">' : esc(f.ext)) + '</span>' +
+        '<span class="file-meta"><p class="file-name" title="' + esc(f.name) + '">' + esc(f.name) + '</p><p class="file-size">' + fmtSize(f.size) +
+        (f.pages === undefined ? ' · counting…' : f.pages ? ' · ' + plural(f.pages, 'page') : '') + '</p></span>' +
+        '<button type="button" class="x-btn" data-remove-file="' + d.id + ':' + f.id + '" aria-label="Remove ' + esc(f.name) + '">×</button></li>';
+    }).join('');
+    $('file-errors-' + d.id).innerHTML = d.fileErrors.map(function (t) { return '<p class="err" role="alert">' + esc(t) + '</p>'; }).join('');
+  }
+  // With a document, files are extra pages of it; without one (the main upload), each file becomes a new document.
+  function addFiles(d, list) {
+    var okExt = ['pdf', 'doc', 'docx', 'jpg', 'jpeg', 'png', 'zip'], errs = [], over = 0, added = [];
     Array.prototype.forEach.call(list || [], function (f) {
       var ext = (f.name.split('.').pop() || '').toLowerCase();
-      if (okExt.indexOf(ext) < 0) { errs.push(f.name + ' isn’t a supported file type. Use PDF, DOC, JPG, PNG or ZIP.'); return; }
-      if (f.size > 30 * 1024 * 1024) { errs.push(f.name + ' is larger than 30 MB.'); return; }
-      if (S.files.length >= 10) { over++; return; }
+      if (okExt.indexOf(ext) < 0) { errs.push(f.name + ': use PDF, DOC, JPG, PNG or ZIP.'); return; }
+      if (f.size > 30 * 1024 * 1024) { errs.push(f.name + ' is over 30 MB.'); return; }
+      if (allFiles().length >= 20) { over++; return; }
       var img = /^(jpe?g|png)$/.test(ext), url = '';
       if (img) { try { url = URL.createObjectURL(f); } catch (e) { url = ''; } }
       var entry = { id: ++uid, file: f, name: f.name, size: f.size, ext: ext.toUpperCase(), url: url, pages: undefined };
-      S.files.push(entry);
+      var target = d || newDoc();
+      target.files.push(entry);
+      if (!d) { S.docs.push(target); added.push(target); }
       countPages(entry).then(function (n) { entry.pages = n; filesChanged(); });
     });
-    if (over) errs.push(over + (over === 1 ? ' file wasn’t' : ' files weren’t') + ' added. The limit is 10 files.');
-    S.fileErrors = errs;
-    filesChanged();
+    if (over) errs.push(plural(over, 'file') + ' not added (limit is 20 per order).');
+    if (d) d.fileErrors = errs; else S.uploadErrors = errs;
+    renderDocs(); filesChanged();
+    // Take the customer straight to the details of the first new document.
+    if (added.length) {
+      var sel = $('doc-type-' + added[0].id);
+      document.querySelector('[data-doc="' + added[0].id + '"]').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      sel.focus({ preventScroll: true });
+    }
   }
+  function revokeFiles(files) { files.forEach(function (f) { if (f.url) { try { URL.revokeObjectURL(f.url); } catch (e) {} } }); }
 
   // ---------- Country combobox ----------
   var combo = { open: false, query: '', active: 0, matches: [] };
-  function comboMatches(q) {
-    q = q.trim().toLowerCase();
-    var starts = CFG.countries.filter(function (c) { return c.toLowerCase().indexOf(q) === 0; });
-    var contains = q ? CFG.countries.filter(function (c) { return c.toLowerCase().indexOf(q) > 0; }) : [];
-    return starts.concat(contains).slice(0, 8);
-  }
   function renderCombo() {
     var list = $('country-list'), input = $('country');
     input.setAttribute('aria-expanded', combo.open ? 'true' : 'false');
     list.hidden = !combo.open;
     if (!combo.open) { input.removeAttribute('aria-activedescendant'); return; }
-    combo.matches = comboMatches(combo.query);
-    if (!combo.matches.length) { list.innerHTML = '<li class="combo-empty">No countries match “' + esc(combo.query) + '”. Check the spelling or call us.</li>'; return; }
+    var q = combo.query.trim().toLowerCase();
+    combo.matches = CFG.countries.filter(function (c) { return c.toLowerCase().indexOf(q) === 0; })
+      .concat(q ? CFG.countries.filter(function (c) { return c.toLowerCase().indexOf(q) > 0; }) : []).slice(0, 8);
+    if (!combo.matches.length) { list.innerHTML = '<li class="combo-empty">No match for “' + esc(combo.query) + '”.</li>'; return; }
     list.innerHTML = combo.matches.map(function (c, i) {
-      return '<li class="combo-opt' + (c === S.country ? ' is-sel' : '') + (i === combo.active ? ' is-active' : '') + '" role="option" id="copt-' + i + '" aria-selected="' + (c === S.country) + '" data-country="' + esc(c) + '"><span>' + esc(c) + '</span>' + (c === S.country ? '<span aria-hidden="true">✓</span>' : '') + '</li>';
+      return '<li class="combo-opt' + (c === S.country ? ' is-sel' : '') + (i === combo.active ? ' is-active' : '') + '" role="option" id="copt-' + i + '" aria-selected="' + (c === S.country) + '" data-country="' + esc(c) + '">' + esc(c) + '</li>';
     }).join('');
     input.setAttribute('aria-activedescendant', 'copt-' + combo.active);
   }
@@ -897,72 +981,37 @@ legend{padding:0;margin:0 0 10px}
     S.country = c; S.touched.country = true;
     combo.open = false; combo.query = '';
     $('country').value = c;
-    renderCombo(); renderSummary(); renderErrors(); renderSteps();
+    renderCombo(); renderErrors(); renderTabs();
   }
 
-  // ---------- Review ----------
-  // Short recap without prices; the order summary beside it holds the prices.
-  function renderReview() {
-    var speed = speedObj(), ship = shipObj();
-    function head(title, step) { return '<div class="rv-h"><h3 class="rv-t">' + title + '</h3><button type="button" class="rv-edit" data-go="' + step + '">Edit</button></div>'; }
-    function kv(label, value, full) { return '<div' + (full ? ' class="full"' : '') + '><dt>' + esc(label) + '</dt><dd>' + esc(value) + '</dd></div>'; }
-    var notaryShort = { certified: 'already notarized', needs: 'needs notarization', unsure: 'notarization not sure' };
-    var docs = S.docs.map(function (d) { return d.type + ' (' + notaryShort[d.notary] + ')'; }).join('; ');
-    var translation = S.needTranslation
-      ? S.fromLang + ' → ' + S.toLang + ', ' + S.pages + (S.pages === 1 ? ' page' : ' pages') + ', ' + CFG.deliveries.find(function (x) { return x.id === S.delivery; }).label
-      : 'Not needed';
-    var addr = S.shipping === 'pickup' && !S.addr1 ? 'Pick up at our Lake Oswego office'
-      : [S.addr1, S.addr2, [S.city, S.region, S.postal].filter(Boolean).join(' '), S.addrCountry].filter(Boolean).join(', ');
-    var files = S.files.length ? S.files.length + (S.files.length === 1 ? ' file' : ' files') : 'None (send originals)';
-
-    $('review').innerHTML =
-      '<div class="rv">' + head('Your order', 1) +
-        '<dl class="rv-grid">' +
-          kv('Destination', S.country) + kv('Processing', speed.name + ', ' + speed.time) +
-          kv(S.docs.length === 1 ? 'Document' : 'Documents (' + S.docs.length + ')', docs, true) +
-          kv('Translation', translation) + kv('Uploaded', files) +
-        '</dl>' +
-      '</div>' +
-      '<div class="rv">' + head('Contact &amp; delivery', 2) +
-        '<dl class="rv-grid">' +
-          kv('Name', S.name) + kv('Email', S.email) + kv('Phone', S.phoneCode + ' ' + S.phone) + (S.company ? kv('Company', S.company) : kv('Return', ship ? ship.name : '—')) +
-          (S.company ? kv('Return', ship ? ship.name : '—', true) : '') +
-          kv(S.shipping === 'pickup' ? 'Pick up' : 'Return address', addr || '—', true) +
-        '</dl>' +
-      '</div>';
+  // ---------- Payment step ----------
+  function renderPayment() {
+    var ship = shipObj();
+    $('pay-lines').innerHTML = linesHtml(pricing().lines);
+    function kv(l, v, full) { return '<div' + (full ? ' class="full"' : '') + '><dt>' + esc(l) + '</dt><dd>' + esc(v) + '</dd></div>'; }
+    var addr = S.shipping === 'pickup' ? 'Pick up in Lake Oswego' : [S.addr1, [S.city, S.region, S.postal].filter(Boolean).join(' '), S.addrCountry].filter(Boolean).join(', ');
+    $('pay-contact').innerHTML = kv('Name', S.name) + kv('Phone', S.phoneCode + ' ' + S.phone) + kv('Email', S.email, true) + kv(ship.name, addr, true);
   }
 
   // ---------- Submit ----------
   function submit() {
     var v = validity();
-    S.tried[1] = S.tried[2] = S.tried[3] = true;
+    S.tried[3] = true;
     renderErrors();
-    var alert = $('submit-alert');
-    if (!(v[1] && v[2] && v[3])) {
-      var missing = [];
-      if (!v[1]) missing.push('<li><button type="button" class="rv-edit" data-go="1">Documents: finish the highlighted fields</button></li>');
-      if (!v[2]) missing.push('<li><button type="button" class="rv-edit" data-go="2">Details: finish the highlighted fields</button></li>');
-      if (!v[3]) missing.push('<li>Agree to the terms above</li>');
-      alert.innerHTML = '<b>Please complete these before submitting:</b><ul style="margin:6px 0 0;padding-left:18px">' + missing.join('') + '</ul>';
-      alert.hidden = false;
-      return;
-    }
-    alert.hidden = true;
-    var btn = $('submit');
-    btn.disabled = true;
-    // TODO: POST the order (and S.files) to your backend / payment provider here.
-    var p = pricing(), speed = speedObj(), ship = shipObj();
+    if (!v.step[STEPS.length]) { $('terms').focus(); return; }
+    // Earlier steps can only be reached once valid, but check anyway.
+    for (var n = 1; n < STEPS.length; n++) { if (!v.step[n]) { S.tried[n] = true; showStep(n); renderErrors(); return; } }
+    // TODO: send the order (and each S.docs[i].files) to your backend and take the card payment here.
+    var speed = speedObj(), ship = shipObj();
     $('done-email').textContent = S.email;
     $('done-no').textContent = 'OAH-' + String(100000 + Math.floor(Math.random() * 900000));
     $('done-date').textContent = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
-    $('done-speed').textContent = speed.name + ' processing: ' + speed.time + '. We’ll email you at each stage.';
-    $('done-ship-t').textContent = ship.title;
-    $('done-ship-d').textContent = ship.text;
-    $('done-lines').innerHTML = linesHtml(p.lines);
+    $('done-speed').textContent = 'We process it: ' + speed.name + ', ' + speed.time + '.';
+    $('done-ship').textContent = ship.done;
+    $('done-lines').innerHTML = linesHtml(pricing().lines);
     $('view-form').hidden = true;
-    document.body.classList.remove('has-mbar');
     $('view-done').hidden = false;
-    btn.disabled = false;
+    document.body.classList.remove('has-mbar');
     try { history.replaceState(null, '', urlFor('confirmation')); } catch (e) {}
     window.scrollTo({ top: 0 });
     $('view-done').focus({ preventScroll: true });
@@ -970,48 +1019,63 @@ legend{padding:0;margin:0 0 10px}
 
   // ---------- Events ----------
   document.addEventListener('click', function (e) {
+    var tipBtn = e.target.closest('[data-tip]');
+    if (tipBtn) { var tip = $(tipBtn.getAttribute('data-tip')); tip.hidden = !tip.hidden; tipBtn.setAttribute('aria-expanded', tip.hidden ? 'false' : 'true'); return; }
+    var sec = e.target.closest('[data-collapse]');
+    if (sec) { var k = sec.getAttribute('data-collapse'); OPEN[k] = !OPEN[k]; renderSections(validity()); return; }
     var t = e.target.closest('[data-go],[data-next],[data-remove-doc],[data-remove-file],[data-country]');
     if (!t) return;
     if (t.hasAttribute('data-go')) { var n = Number(t.getAttribute('data-go')); if (n <= S.maxStep) showStep(n); }
-    else if (t.hasAttribute('data-next')) tryNext(Number(t.getAttribute('data-next')));
-    else if (t.hasAttribute('data-remove-doc')) { var id = Number(t.getAttribute('data-remove-doc')); S.docs = S.docs.filter(function (d) { return d.id !== id; }); renderDocs(); }
+    else if (t.hasAttribute('data-next')) next();
+    else if (t.hasAttribute('data-remove-doc')) {
+      var gone = docById(t.getAttribute('data-remove-doc'));
+      revokeFiles(gone.files);
+      S.docs = S.docs.filter(function (d) { return d !== gone; });
+      renderDocs(); filesChanged();
+    }
     else if (t.hasAttribute('data-remove-file')) {
-      var fid = Number(t.getAttribute('data-remove-file'));
-      var f = S.files.find(function (x) { return x.id === fid; });
-      if (f && f.url) { try { URL.revokeObjectURL(f.url); } catch (x) {} }
-      S.files = S.files.filter(function (x) { return x.id !== fid; }); S.fileErrors = []; filesChanged();
+      var ids = t.getAttribute('data-remove-file').split(':'), doc = docById(ids[0]), fid = Number(ids[1]);
+      revokeFiles(doc.files.filter(function (x) { return x.id === fid; }));
+      doc.files = doc.files.filter(function (x) { return x.id !== fid; }); doc.fileErrors = [];
+      // A document with no files left is gone.
+      if (!doc.files.length) { S.docs = S.docs.filter(function (x) { return x !== doc; }); renderDocs(); }
+      filesChanged();
     }
     else if (t.hasAttribute('data-country')) pickCountry(t.getAttribute('data-country'));
   });
+  // Enter in a text field moves to the next step (the country search uses Enter to pick).
+  $('form').addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' && e.target.tagName === 'INPUT' && e.target.id !== 'country' && e.target.type !== 'checkbox') { e.preventDefault(); next(); }
+  });
+  $('form').addEventListener('submit', function (e) { e.preventDefault(); });
   $('country-list').addEventListener('mousedown', function (e) { e.preventDefault(); });
 
   document.addEventListener('change', function (e) {
     var t = e.target;
-    if (t.hasAttribute('data-doc-type')) { var d = S.docs.find(function (x) { return x.id === Number(t.getAttribute('data-doc-type')); }); d.type = t.value; d.touched = true; renderErrors(); renderSteps(); }
-    else if (t.hasAttribute('data-notary')) { var d2 = S.docs.find(function (x) { return x.id === Number(t.getAttribute('data-notary')); }); d2.notary = t.value; d2.touched = true; renderDocs(); }
+    if (t.hasAttribute('data-doc-type')) { var d = S.docs.find(function (x) { return x.id === Number(t.getAttribute('data-doc-type')); }); d.type = t.value; d.touched = true; renderErrors(); renderTabs(); }
+    else if (t.hasAttribute('data-file-input')) { addFiles(docById(t.getAttribute('data-file-input')) || null, t.files); t.value = ''; }
+    else if (t.hasAttribute('data-notary')) { var d2 = S.docs.find(function (x) { return x.id === Number(t.getAttribute('data-notary')); }); d2.notary = t.value; renderDocs(); }
     else if (t.name === 'speed') { S.speed = t.value; renderSpeeds(); renderSummary(); }
-    else if (t.name === 'shipping') { S.shipping = t.value; S.touched.shipping = true; renderShips(); renderSummary(); renderErrors(); }
+    else if (t.name === 'shipping') { S.shipping = t.value; renderShips(); renderSummary(); renderErrors(); }
     else if (t.name === 'delivery') { S.delivery = t.value; renderDeliveries(); }
   });
 
-  // Plain fields: keep state in sync, validate on blur
   document.querySelectorAll('[data-field], .lang-select').forEach(function (el) {
     var k = el.id;
-    var evt = el.type === 'checkbox' || el.tagName === 'SELECT' ? 'change' : 'input';
-    el.addEventListener(evt, function () {
+    el.addEventListener(el.type === 'checkbox' || el.tagName === 'SELECT' ? 'change' : 'input', function () {
       S[k] = el.type === 'checkbox' ? el.checked : el.value;
-      if (k === 'addrCountry') renderShips();
       if (el.tagName === 'SELECT' || el.type === 'checkbox') S.touched[k] = true;
-      if (k === 'fromLang' || k === 'toLang') { S.needTranslation = !!S.toLang && S.toLang !== 'none'; renderTranslation(); renderSummary(); }
-      renderErrors();
+      if (k === 'addrCountry') renderShips();
+      if (k === 'toLang' || k === 'fromLang') renderSummary();
+      renderErrors(); renderTabs();
     });
-    el.addEventListener('blur', function () { if (k in MSG) { S.touched[k] = true; renderErrors(); } });
+    el.addEventListener('blur', function () { if (k in MSG && S[k]) { S.touched[k] = true; renderErrors(); } });
   });
 
   var cInput = $('country');
   cInput.addEventListener('focus', function () { combo.open = true; combo.query = ''; combo.active = 0; cInput.value = ''; cInput.placeholder = S.country || 'Start typing a country'; renderCombo(); });
   cInput.addEventListener('input', function () { combo.open = true; combo.query = cInput.value; combo.active = 0; renderCombo(); });
-  cInput.addEventListener('blur', function () { setTimeout(function () { combo.open = false; cInput.value = S.country; S.touched.country = true; renderCombo(); renderErrors(); }, 120); });
+  cInput.addEventListener('blur', function () { setTimeout(function () { combo.open = false; cInput.value = S.country; renderCombo(); renderErrors(); }, 120); });
   cInput.addEventListener('keydown', function (e) {
     if (e.key === 'ArrowDown') { e.preventDefault(); combo.open = true; combo.active = Math.min(combo.active + 1, Math.max(0, combo.matches.length - 1)); renderCombo(); }
     else if (e.key === 'ArrowUp') { e.preventDefault(); combo.active = Math.max(0, combo.active - 1); renderCombo(); }
@@ -1019,33 +1083,49 @@ legend{padding:0;margin:0 0 10px}
     else if (e.key === 'Escape') { combo.open = false; cInput.value = S.country; renderCombo(); }
   });
 
+  $('intl-switch').addEventListener('click', function () { S.shipping = 'intl'; renderShips(); renderSummary(); renderErrors(); });
+  $('needTranslation').addEventListener('change', function () {
+    S.needTranslation = this.checked;
+    renderTranslation(); renderSummary(); renderErrors(); renderTabs();
+    if (S.needTranslation) $('toLang').focus();
+  });
   $('pages-down').addEventListener('click', function () { S.pages = Math.max(1, S.pages - 1); renderTranslation(); renderSummary(); });
   $('pages-up').addEventListener('click', function () { S.pages = Math.min(200, S.pages + 1); renderTranslation(); renderSummary(); });
-  $('add-doc').addEventListener('click', function () { var id = ++uid; S.docs.push({ id: id, type: '', notary: '' }); renderDocs(); $('doc-type-' + id).focus(); });
 
-  var drop = $('drop');
-  drop.addEventListener('dragover', function (e) { e.preventDefault(); drop.classList.add('is-over'); });
-  drop.addEventListener('dragleave', function () { drop.classList.remove('is-over'); });
-  drop.addEventListener('drop', function (e) { e.preventDefault(); drop.classList.remove('is-over'); addFiles(e.dataTransfer && e.dataTransfer.files); });
-  $('file-input').addEventListener('change', function (e) { addFiles(e.target.files); e.target.value = ''; });
+  // Mobile price details sheet
+  function toggleSheet(open) {
+    $('msheet').hidden = !open;
+    $('mback').hidden = !open;
+    $('mbar-total').setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  $('mbar-total').addEventListener('click', function () { toggleSheet($('msheet').hidden); });
+  $('msheet-close').addEventListener('click', function () { toggleSheet(false); });
+  $('mback').addEventListener('click', function () { toggleSheet(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !$('msheet').hidden) toggleSheet(false); });
 
-  $('submit').addEventListener('click', submit);
-  $('mbar-next').addEventListener('click', function () { if (S.step === 3) submit(); else tryNext(S.step + 1); });
-  $('new-order').addEventListener('click', function () { location.href = urlFor('documents'); });
-
-  window.addEventListener('popstate', function () {
-    if (!$('view-form').hidden) showStep(stepFromPath(), { fromHistory: true });
+  // Drag and drop onto the upload area
+  document.addEventListener('dragover', function (e) { var z = e.target.closest && e.target.closest('[data-drop]'); if (z) { e.preventDefault(); z.classList.add('is-over'); } });
+  document.addEventListener('dragleave', function (e) { var z = e.target.closest && e.target.closest('[data-drop]'); if (z) z.classList.remove('is-over'); });
+  document.addEventListener('drop', function (e) {
+    var z = e.target.closest && e.target.closest('[data-drop]');
+    if (!z) return;
+    e.preventDefault(); z.classList.remove('is-over');
+    addFiles(docById(z.getAttribute('data-drop')) || null, e.dataTransfer && e.dataTransfer.files);
   });
 
+  $('submit').addEventListener('click', submit);
+  $('new-order').addEventListener('click', function () { location.href = urlFor(STEPS[0].slug); });
+  window.addEventListener('popstate', function () { if (!$('view-form').hidden) showStep(stepFromPath(), { fromHistory: true }); });
+
   // ---------- Init ----------
-  $('fromLang').innerHTML = options(CFG.languages, 'Select language');
-  $('toLang').innerHTML = options([['none', 'No translation needed']].concat(CFG.languages), 'Select language');
+  $('toLang').innerHTML = options(CFG.languages, 'Select');
+  $('fromLang').innerHTML = options(CFG.languages, 'Select');
   $('phoneCode').innerHTML = options(CFG.phoneCodes);
   $('addrCountry').innerHTML = options(CFG.addrCountries);
-  renderTranslation(); renderDeliveries(); renderDocs(); renderSpeeds(); renderShips(); renderFiles();
+  renderTranslation(); renderDeliveries(); renderDocs(); renderSpeeds(); renderShips();
   // A fresh page load always starts at step 1 (nothing is saved between visits).
-  showStep(1, { fromHistory: true, scroll: false });
-  try { history.replaceState(null, '', urlFor('documents')); } catch (e) {}
+  showStep(1, { fromHistory: true, scroll: false, focus: false });
+  try { history.replaceState(null, '', urlFor(STEPS[0].slug)); } catch (e) {}
 })();
 </script>
 </body>
