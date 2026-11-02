@@ -292,8 +292,48 @@ legend{padding:0;margin:0 0 8px}
 .ftr p{margin-top:8px}
 .ftr a{color:var(--muted);text-decoration:none}
 .ftr a:hover{color:var(--primary)}
+/* ---------- Interactive CTA effects (one shared feel for every button) ---------- */
+:root{--ease:cubic-bezier(.2,.7,.2,1);--dur:.22s;--cta-shadow:0 6px 16px rgba(5,90,171,.28);--cta-shadow-sm:0 2px 6px rgba(5,90,171,.22)}
+button,.btn,.pill,.choice,.drop,.help-link,.intl-switch{-webkit-tap-highlight-color:transparent}
+.btn,.help-link,.intl-switch,.pill,.choice,.drop,.add-btn,.btn-text,.edit,.link-btn,.x-btn,.info-btn,.stepper button,.tab,.sec-toggle,.mbar-total,.switch-ui{
+  transition:background-color var(--dur) var(--ease),color var(--dur) var(--ease),border-color var(--dur) var(--ease),box-shadow var(--dur) var(--ease),transform var(--dur) var(--ease)}
+/* Primary CTAs: Continue, Pay, Print receipt */
+.btn-primary{box-shadow:var(--cta-shadow-sm);position:relative;overflow:hidden}
+.btn-primary::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.22) 50%,transparent 70%);transform:translateX(-120%);transition:transform .6s var(--ease);pointer-events:none}
+.btn .arr{display:inline-block;transition:transform var(--dur) var(--ease)}
+.btn-ghost{box-shadow:none}
+.btn:focus-visible,.help-link:focus-visible,.intl-switch:focus-visible,.btn-text:focus-visible,.edit:focus-visible,.link-btn:focus-visible,.x-btn:focus-visible,.tab:focus-visible,.stepper button:focus-visible,.mbar-total:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.btn-text .arr{display:inline-block;transition:transform var(--dur) var(--ease)}
+/* Hover lift only on devices that really hover (no sticky hover on phones) */
+@media (hover:hover){
+  .btn-primary:hover{background:var(--primary-dark);transform:translateY(-2px);box-shadow:var(--cta-shadow)}
+  .btn-primary:hover::after{transform:translateX(120%)}
+  .btn:hover .arr{transform:translateX(4px)}
+  .btn-ghost:hover{background:var(--primary);border-color:var(--primary);color:#fff;transform:translateY(-2px);box-shadow:var(--cta-shadow)}
+  .help-link:hover{background:var(--primary);border-color:var(--primary);color:#fff;transform:translateY(-1px);box-shadow:var(--cta-shadow-sm)}
+  .btn-text:hover .arr{transform:translateX(-4px)}
+  .intl-switch:hover{background:var(--c);color:#fff;transform:translateY(-1px)}
+  .pill:not(.is-on):hover{background:var(--t);transform:translateY(-1px)}
+  .choice:not(.is-on):hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(16,16,16,.08)}
+  .drop:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(16,16,16,.06)}
+  .stepper button:not(:disabled):hover{background:var(--t)}
+  .edit:hover{background:var(--primary-light);border-radius:4px}
+  .sec-toggle:hover .chev{border-color:var(--c)}
+  .mbar-total:hover .mbar-link{text-decoration:underline}
+}
+/* Press feedback comes last so it wins over the hover lift */
+.pill:not(.is-on):active,.choice:not(.is-on):active{transform:scale(.96);transition-duration:.08s}
+.btn:active{transform:translateY(0) scale(.97);box-shadow:var(--cta-shadow-sm);transition-duration:.08s}
+.pill:active,.choice:active,.add-btn:active,.intl-switch:active,.help-link:active,.stepper button:not(:disabled):active,.x-btn:active,.link-btn:active,.edit:active,.info-btn:active,.tab.can:active,.mbar-total:active{transform:scale(.96);transition-duration:.08s}
+.drop:active{transform:scale(.99);transition-duration:.08s}
+.btn-text:active,.sec-toggle:active{transform:scale(.98);transition-duration:.08s}
+
 @media print{.hdr,.ftr,.mbar,.skip,.no-print{display:none!important}body{background:#fff}}
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;scroll-behavior:auto!important}
+  /* keep colour feedback, drop the movement */
+  .btn,.help-link,.intl-switch,.pill,.choice,.drop,.add-btn,.btn-text,.edit,.link-btn,.x-btn,.info-btn,.stepper button,.tab,.sec-toggle,.mbar-total,.arr,.btn-primary::after{transform:none!important}
+}
 </style>
 </head>
 <body class="has-mbar">
@@ -301,14 +341,14 @@ legend{padding:0;margin:0 0 8px}
 
 <header class="hdr">
   <div class="hdr-in">
-    <a class="logo" href="https://oregonapostillehub.com/" aria-label="Oregon Apostille Hub home">
+    <a class="logo" href="/details" aria-label="Oregon Apostille Hub home">
       <img src="https://oregonapostillehub.com/wp-content/uploads/2025/01/oah-header-logo.webp" alt="Oregon Apostille Hub" width="300" height="80">
     </a>
     <nav class="nav" aria-label="Main">
-      <a href="https://oregonapostillehub.com/about-us/">About Us</a>
-      <a href="https://oregonapostillehub.com/oregon-apostille-cities/">We cover</a>
-      <a href="https://oregonapostillehub.com/hague-convention-countries/">Hague Countries</a>
-      <a href="https://oregonapostillehub.com/blog/">Blog</a>
+      <a href="/about-us/">About Us</a>
+      <a href="/oregon-apostille-cities/">We cover</a>
+      <a href="/hague-convention-countries/">Hague Countries</a>
+      <a href="/blog/">Blog</a>
     </nav>
     <a class="help-link" href="tel:+19717083000">Need help?</a>
   </div>
@@ -360,7 +400,7 @@ legend{padding:0;margin:0 0 8px}
           </div>
         </div>
         <div class="actions">
-          <button type="button" class="btn btn-primary" data-next>Continue →</button>
+          <button type="button" class="btn btn-primary" data-next>Continue <span class="arr" aria-hidden="true">→</span></button>
         </div>
       </section>
 
@@ -483,8 +523,8 @@ legend{padding:0;margin:0 0 8px}
           </div>
         </div>
         <div class="actions">
-          <button type="button" class="btn-text" data-go="1">← Back</button>
-          <button type="button" class="btn btn-primary" data-next>Continue →</button>
+          <button type="button" class="btn-text" data-go="1"><span class="arr" aria-hidden="true">←</span> Back</button>
+          <button type="button" class="btn btn-primary" data-next>Continue <span class="arr" aria-hidden="true">→</span></button>
         </div>
       </section>
 
@@ -515,13 +555,13 @@ legend{padding:0;margin:0 0 8px}
           </div>
           <div class="sec-b">
             <!-- TODO: mount the card form (e.g. Stripe Payment Element) here and charge in submit(). -->
-            <label class="check" id="terms-wrap" for="terms"><input id="terms" type="checkbox" data-field><span>I agree to the <a href="https://oregonapostillehub.com/terms-and-conditions" target="_blank" rel="noopener">terms of service</a>.</span></label>
+            <label class="check" id="terms-wrap" for="terms"><input id="terms" type="checkbox" data-field><span>I agree to the <a href="/terms-and-conditions" target="_blank" rel="noopener">terms of service</a>.</span></label>
             <p class="err" id="err-terms" hidden></p>
             <button type="button" class="btn btn-primary pay-btn" id="submit">Pay <span class="js-total">$0</span></button>
           </div>
         </div>
         <div class="actions">
-          <button type="button" class="btn-text" data-go="2">← Back</button>
+          <button type="button" class="btn-text" data-go="2"><span class="arr" aria-hidden="true">←</span> Back</button>
         </div>
       </section>
     </form>
@@ -550,7 +590,7 @@ legend{padding:0;margin:0 0 8px}
     <button type="button" class="mbar-total" id="mbar-total" aria-expanded="false" aria-controls="msheet">
       <span>Total <b class="mbar-link">Details <i class="caret" aria-hidden="true">▴</i></b></span><strong class="js-total">$0</strong>
     </button>
-    <button type="button" class="btn btn-primary" data-next>Continue →</button>
+    <button type="button" class="btn btn-primary" data-next>Continue <span class="arr" aria-hidden="true">→</span></button>
   </div>
 </div>
 
@@ -585,9 +625,9 @@ legend{padding:0;margin:0 0 8px}
 </main>
 
 <footer class="ftr">
-  <a href="https://oregonapostillehub.com/" aria-label="Oregon Apostille Hub home"><img src="https://oregonapostillehub.com/wp-content/uploads/2025/01/OAH-Logo-1-1-1.png" alt="Oregon Apostille Hub" width="300" height="80"></a>
+  <a href="/details" aria-label="Oregon Apostille Hub home"><img src="https://oregonapostillehub.com/wp-content/uploads/2025/01/OAH-Logo-1-1-1.png" alt="Oregon Apostille Hub" width="300" height="80"></a>
   <p>5 Centerpointe Dr, Suite #400, Lake Oswego OR 97035 · <a href="mailto:info@oregonapostillehub.com">info@oregonapostillehub.com</a> · <a href="tel:+19717083000">+1 (971) 708-3000</a></p>
-  <p>© 2026 Oregon Apostille Hub LLC · <a href="https://oregonapostillehub.com/terms-and-conditions">Terms</a></p>
+  <p>© 2026 Oregon Apostille Hub LLC · <a href="/terms-and-conditions">Terms</a></p>
 </footer>
 
 <script>
